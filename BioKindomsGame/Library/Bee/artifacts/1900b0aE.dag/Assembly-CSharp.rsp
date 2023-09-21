@@ -348,7 +348,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/MyAssets/Scripts/Game/CameraView.cs"
+"Assets/MyAssets/Scripts/Game/Character/CameraView.cs"
+"Assets/MyAssets/Scripts/Game/Character/PlayerMove.cs"
+"Assets/MyAssets/Scripts/Game/Character/V2/PlayerMovev2.cs"
 "Assets/MyAssets/Scripts/Game/Craft/CardCraftingAnimals.cs"
 "Assets/MyAssets/Scripts/Game/Craft/CardCraftingFungi.cs"
 "Assets/MyAssets/Scripts/Game/Craft/CardCraftingMonera.cs"
@@ -392,7 +394,6 @@
 "Assets/MyAssets/Scripts/Game/Menu/MenuAnimationsProtista.cs"
 "Assets/MyAssets/Scripts/Game/Menu/MenuAnimationsVegetal.cs"
 "Assets/MyAssets/Scripts/Game/Menu/ViewMenu.cs"
-"Assets/MyAssets/Scripts/Game/PlayerMove.cs"
 "Assets/MyAssets/Scripts/Login/LoginController.cs"
 "Assets/MyAssets/Scripts/Presentation/TimerPresentation.cs"
 -langversion:9.0
