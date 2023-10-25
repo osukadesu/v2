@@ -7,6 +7,6 @@ public class CameraView : MonoBehaviour
     [SerializeField] Transform target;
     void Update()
     {
-        transform.position = target.transform.position + new Vector3(0, 8, -8);
+        transform.position = target.transform.position + new Vector3(0, 25, -24);
     }
 }

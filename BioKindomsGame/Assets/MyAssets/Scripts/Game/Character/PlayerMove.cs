@@ -6,7 +6,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] CharacterController player;
     [SerializeField] Vector3 playerInput, camForward, camRight, movePlayer;
     [SerializeField] Camera myCamera;
-    [SerializeField] private Animator myAnim;
+    [SerializeField] Animator myAnim;
+
     void Start()
     {
         myAnim.SetBool("idle", true);
@@ -32,7 +33,7 @@ public class PlayerMove : MonoBehaviour
             myAnim.SetBool("idle", true);
             myAnim.SetBool("run", false);
         }
-        Debug.Log(horizontalMove + "," + verticalMove);
+        //Debug.Log(horizontalMove + "," + verticalMove);
     }
 
     void CameraPath()

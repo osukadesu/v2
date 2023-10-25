@@ -4,8 +4,6 @@ using UnityEngine;
 public class InventoryItemData : ScriptableObject
 {
     public string itemName;
-    public Sprite[] itemTicket;
-    public Sprite[] itemIcon;
-    public Sprite[] itemChecks;
+    public Sprite imageShadowTicket, imageTicket, imageShadowItem, imageItem;
     public bool itemIsCheck;
 }

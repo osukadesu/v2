@@ -1,17 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class InventorySystem : MonoBehaviour
 {
     public static InventorySystem instance;
     public delegate void onInventoryChangedEvent();
-    public event onInventoryChangedEvent onInventoryChangedEventCallBack;
+    public event onInventoryChangedEvent OnInventoryChangedEventCallBack;
     public Dictionary<InventoryItemData, InventoryItem> _itemDictionary;
     public List<InventoryItem> inventoryItems;
-    [SerializeField] InventoryUI inventoryUI;
+    public InventoryUI inventoryUI;
     void Start()
     {
-        instance.onInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
+        instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
     }
     private void Awake()
     {
@@ -25,14 +24,14 @@ public class InventorySystem : MonoBehaviour
         if (_itemDictionary.TryGetValue(referenceData, out InventoryItem value))
         {
             value.AddStack();
-            onInventoryChangedEventCallBack.Invoke();
+            OnInventoryChangedEventCallBack.Invoke();
         }
         else
         {
-            InventoryItem newItem = new InventoryItem(referenceData);
+            InventoryItem newItem = new(referenceData);
             inventoryItems.Add(newItem);
             _itemDictionary.Add(referenceData, newItem);
-            onInventoryChangedEventCallBack.Invoke();
+            OnInventoryChangedEventCallBack.Invoke();
         }
     }
 }

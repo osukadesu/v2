@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0c7f73acee14ff4993fefc2c2e2df56, type: 3}
+  m_Name: InfoKindom
+  m_EditorClassIdentifier: 
+  textName: Animal1
+  text2: Vista 3D
+  textInfo: Info
+  animal1: {fileID: 2759885286018085369, guid: d736a7ada97799e4889406dd357d40ee, type: 3}
+  animal2: {fileID: 6136178312442412578, guid: 756c5b65e865ab240b6425f89f68a1da, type: 3}
+  animal3: {fileID: 6136178312442412578, guid: 756c5b65e865ab240b6425f89f68a1da, type: 3}
+  animal4: {fileID: 0}
+  animal5: {fileID: 0}
+  vegetal1: {fileID: 0}
+  vegetal2: {fileID: 0}
+  vegetal3: {fileID: 0}
+  vegetal4: {fileID: 0}
+  vegetal5: {fileID: 0}
+  fungi1: {fileID: 0}
+  fungi2: {fileID: 0}
+  fungi3: {fileID: 0}
+  fungi4: {fileID: 0}
+  fungi5: {fileID: 0}
+  protista1: {fileID: 0}
+  protista2: {fileID: 0}
+  protista3: {fileID: 0}
+  protista4: {fileID: 0}
+  protista5: {fileID: 0}
+  monera1: {fileID: 0}
+  monera2: {fileID: 0}
+  monera3: {fileID: 0}
+  monera4: {fileID: 0}
+  monera5: {fileID: 0}
