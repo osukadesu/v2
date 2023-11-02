@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 29
+  controlID: 142
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 114
+  controlID: 53
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 115
+  controlID: 54
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,169 +365,16 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: -1053121776671975949, guid: c0eeb5362a9c0cf428f41b977a957d98, type: 2}
-    - {fileID: -8828426300606657006, guid: 1667f494b6807664f9e4fe9d1fb707fa, type: 2}
     - {fileID: 615098856590629338, guid: 178080de1d0625a468302a5248b764ba, type: 2}
-    - {fileID: 1389475152089467215, guid: df066885eb377514790652141e59812c, type: 2}
-    - {fileID: -491440099823086971, guid: 89c539b69a1d95943ba35c0aea23548d, type: 2}
-    - {fileID: -4040641480466267849, guid: 53a1760a42ee48846bd302c566c438f9, type: 2}
-    - {fileID: -1483569167952581380, guid: fdbf08db24bc0384c8abda0c16668a82, type: 2}
-    - {fileID: 7199081861677002345, guid: 286e75277ea0e5c44ae403a04e3b50dd, type: 2}
-    - {fileID: 7604859683994605353, guid: a250806c5cb35d740901409b67aec409, type: 2}
-    - {fileID: -7331811696727225556, guid: 3bdec4f96c38cab4d936cabf93347057, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.3195652
-      e01: 0
-      e02: 0
-      e03: 104.47827
-      e10: 0
-      e11: 0.3195652
-      e12: 0
-      e13: 224.55435
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.80759627
-      e01: 0
-      e02: 0
-      e03: -76.47745
-      e10: 0
-      e11: 0.80759627
-      e12: 0
-      e13: 230.99698
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.46421054
-      e01: 0
-      e02: 0
-      e03: -8.210541
-      e10: 0
-      e11: 0.46421054
-      e12: 0
-      e13: 206.47368
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.82885003
-      e01: 0
-      e02: 0
-      e03: -85.29053
-      e10: 0
-      e11: 0.82885003
-      e12: 0
-      e13: 233.14314
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.6001853
-      e01: 0
-      e02: 0
-      e03: -170.7082
-      e10: 0
-      e11: 0.6001853
-      e12: 0
-      e13: 159.18129
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.3431579
-      e01: 0
-      e02: 0
-      e03: -2.157898
-      e10: 0
-      e11: 0.3431579
-      e12: 0
-      e13: 235.33156
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.91013247
-      e01: 0
-      e02: 0
-      e03: -172.73193
-      e10: 0
-      e11: 0.91013247
-      e12: 0
-      e13: 259.9653
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.3431579
-      e01: 0
-      e02: 0
-      e03: -2.157898
-      e10: 0
-      e11: 0.3431579
-      e12: 0
-      e13: 235.33156
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.3431579
-      e01: 0
-      e02: 0
-      e03: -2.157898
-      e10: 0
-      e11: 0.3431579
-      e12: 0
-      e13: 235.33156
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
     - e00: 1
       e01: 0
       e02: 0
-      e03: -304
+      e03: 0
       e10: 0
       e11: 1
       e12: 0
-      e13: 266
+      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -584,9 +431,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 2c810000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1cfbffff
+      m_ExpandedIDs: 1e83feff38d7ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -920,7 +767,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.19448651, y: 0.50515735, z: -0.11801283, w: 0.83250576}
     speed: 2
-    m_Value: {x: 0.19448651, y: 0.50515735, z: -0.11801283, w: 0.83250576}
+    m_Value: {x: 0.19448635, y: 0.50515693, z: -0.118012734, w: 0.83250505}
   m_Size:
     m_Target: 74.07306
     speed: 2
@@ -1086,22 +933,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MyAssets/Scripts/Game/SaveLoadSystem
+    - Assets/MyAssets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/MyAssets/Scripts/Game/SaveLoadSystem
+  - Assets/MyAssets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\oscar\Documents\Githubs\Emprendimiento\v2\BioKindomsGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 435}
-    m_SelectedIDs: 065c0000
-    m_LastClickedID: 23558
-    m_ExpandedIDs: 00000000b85b0000ba5b0000bc5b0000be5b0000c05b0000c25b0000c45b0000c65b0000c85b0000ca5b0000cc5b0000ce5b0000d05b0000d25b0000d45b000000ca9a3b
+    scrollPos: {x: 0, y: 19}
+    m_SelectedIDs: 40bd0100
+    m_LastClickedID: 113984
+    m_ExpandedIDs: 00000000567b0000587b00005a7b00005c7b00005e7b0000607b0000627b0000647b0000667b0000687b00006a7b00006c7b00006e7b0000707b0000727b0000767b00007a7b00007c7b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1129,7 +976,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b85b0000ba5b0000bc5b0000be5b0000c05b0000c25b0000c45b0000c65b0000c85b0000ca5b0000cc5b0000ce5b0000d05b0000d25b0000d45b0000
+    m_ExpandedIDs: 00000000567b0000587b00005a7b00005c7b00005e7b0000607b0000627b0000647b0000667b0000687b00006a7b00006c7b00006e7b0000707b0000727b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
