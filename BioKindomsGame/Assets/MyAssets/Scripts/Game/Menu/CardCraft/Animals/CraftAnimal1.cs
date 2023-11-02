@@ -1,3 +1,6 @@
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
+
 public class CraftAnimal1 : CraftBuilderBase
 {
     void Awake()
@@ -32,5 +35,6 @@ public class CraftAnimal1 : CraftBuilderBase
         animFillImgItem.SetBool("fillimgitem", true);
         isCreated = true;
         animUnLock.SetBool("itemunlock", true);
+        SceneManager.LoadScene(3);
     }
 }

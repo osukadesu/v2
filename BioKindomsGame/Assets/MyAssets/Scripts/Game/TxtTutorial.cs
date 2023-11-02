@@ -10,7 +10,7 @@ public class TxtTutorial : MonoBehaviour
     public Animator txtAnim;
     private void Start()
     {
-        if (MenuController.instance.isNewGame)
+        if (MenuController.instance.IsNewGame)
         {
             txtAnim.SetBool("txtinfogral", true);
             txtTutorial.text = "Ve por el mapa y guarda las cajas!";

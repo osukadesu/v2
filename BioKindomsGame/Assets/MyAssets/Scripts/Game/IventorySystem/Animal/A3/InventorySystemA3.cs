@@ -5,13 +5,13 @@ public class InventorySystemA3 : MonoBehaviour
 {
     public static InventorySystemA3 instance3;
     public delegate void onInventoryChangedEvent();
-    public event onInventoryChangedEvent onInventoryChangedEventCallBack;
+    public event onInventoryChangedEvent OnInventoryChangedEventCallBack;
     public Dictionary<InventoryItemData, InventoryItem> _itemDictionary;
     public List<InventoryItem> inventoryItems;
     [SerializeField] InventoryUIA3 inventoryUIA3;
     void Start()
     {
-        instance3.onInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventoryA3;
+        instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventoryA3;
     }
     private void Awake()
     {
@@ -25,14 +25,14 @@ public class InventorySystemA3 : MonoBehaviour
         if (_itemDictionary.TryGetValue(referenceData, out InventoryItem value))
         {
             value.AddStack();
-            onInventoryChangedEventCallBack.Invoke();
+            OnInventoryChangedEventCallBack.Invoke();
         }
         else
         {
             InventoryItem newItem = new InventoryItem(referenceData);
             inventoryItems.Add(newItem);
             _itemDictionary.Add(referenceData, newItem);
-            onInventoryChangedEventCallBack.Invoke();
+            OnInventoryChangedEventCallBack.Invoke();
         }
     }
 }

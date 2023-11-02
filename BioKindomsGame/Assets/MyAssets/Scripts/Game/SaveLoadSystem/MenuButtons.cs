@@ -7,13 +7,13 @@ public class MenuButtons : MonoBehaviour
 {
     public void ButtonNewGame()
     {
-        MenuController.instance.isNewGame = true;
+        MenuController.instance.IsNewGame = true;
         SceneManager.LoadScene(3);
     }
     public void ButtonLoadGame()
     {
-        MenuController.instance.isLoadGame = true;
-        SceneManager.LoadScene(3);
+        MenuController.instance.IsLoadGame = true;
+        SceneManager.LoadScene(4);
     }
     public void ButtonOptions()
     {

@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: TICKETCHCH3
   m_EditorClassIdentifier: 
   itemName: TICKETCHCH3
-  itemTicket:
-  - {fileID: 21300000, guid: aa9e2e1f8660e634b8cee43b88ab3b6e, type: 3}
-  itemIcon:
-  - {fileID: 21300000, guid: a2f9baa6f73425646bd1474a857ad61a, type: 3}
-  itemChecks:
-  - {fileID: 21300000, guid: 1e32b24cf1d819849ba76f2eeae49959, type: 3}
-  itemIsCheck: 0
+  imageShadowTicket: {fileID: 21300000, guid: aa9e2e1f8660e634b8cee43b88ab3b6e, type: 3}
+  imageTicket: {fileID: 21300000, guid: aa9e2e1f8660e634b8cee43b88ab3b6e, type: 3}
+  imageShadowItem: {fileID: 21300000, guid: a2f9baa6f73425646bd1474a857ad61a, type: 3}
+  imageItem: {fileID: 21300000, guid: a2f9baa6f73425646bd1474a857ad61a, type: 3}
+  itemIsCheck: 1

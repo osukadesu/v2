@@ -14,6 +14,7 @@ public class ItemObject : MonoBehaviour
     }
     void Awake()
     {
+        messageText = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Text>();
         referenceItem.itemIsCheck = false;
     }
     private void Update()

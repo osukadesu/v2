@@ -130,7 +130,6 @@ public class CanvasManager : MonoBehaviour
         menuCode = 1;
         _cardMenu.SetContent();
     }
-
     public void TabViewMenu()
     {
         _viewMenu.TabVieW();

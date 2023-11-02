@@ -5683,6 +5683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af49c13b57382e240b57605c1e2cebfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalLayoutGroup: {fileID: 0}
   isNewGame: 0
   isLoadGame: 0
 --- !u!82 &569722157
@@ -6791,7 +6792,7 @@ GameObject:
   - component: {fileID: 1599157837}
   m_Layer: 5
   m_Name: BtttonsGroups
-  m_TagString: Untagged
+  m_TagString: menuGameVL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
