@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 public class InventorySystem : MonoBehaviour
@@ -12,7 +13,7 @@ public class InventorySystem : MonoBehaviour
     {
         instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
     }
-    private void Awake()
+    void Awake()
     {
         DontDestroyOnLoad(gameObject);
         inventoryItems = new List<InventoryItem>();

@@ -11,7 +11,7 @@ public class InventorySystemA5 : MonoBehaviour
     [SerializeField] InventoryUIA5 inventoryUIA5;
     void Start()
     {
-        instance5.OnInventoryChangedEventCallBack += inventoryUIA5.OnUpdateInventoryA5;
+        instance5.OnInventoryChangedEventCallBack += inventoryUIA5.OnUpdateInventory;
     }
     private void Awake()
     {

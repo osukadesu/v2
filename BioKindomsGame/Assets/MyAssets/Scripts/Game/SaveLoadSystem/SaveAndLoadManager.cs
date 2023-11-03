@@ -3,12 +3,14 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveAndLoadManager
 {
+    [SerializeField] private static bool fileExist;
+    public static bool MyFileExist { get { return fileExist; } set { fileExist = value; } }
     public static void SaveDataGame(CraftBuilderBase craftBuilderBase, PlayerMove playerMove)
     {
-        PlayerData playerData = new PlayerData(craftBuilderBase, playerMove);
+        PlayerData playerData = new(craftBuilderBase, playerMove);
         string datapath = Application.persistentDataPath + "/player.data";
-        FileStream fileStream = new FileStream(datapath, FileMode.Create);
-        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        FileStream fileStream = new(datapath, FileMode.Create);
+        BinaryFormatter binaryFormatter = new();
         binaryFormatter.Serialize(fileStream, playerData);
         fileStream.Close();
         Debug.Log("Partida Guardada");
@@ -18,8 +20,9 @@ public static class SaveAndLoadManager
         string datapath = Application.persistentDataPath + "/player.data";
         if (File.Exists(datapath))
         {
-            FileStream fileStream = new FileStream(datapath, FileMode.Open);
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            MyFileExist = true;
+            FileStream fileStream = new(datapath, FileMode.Open);
+            BinaryFormatter binaryFormatter = new();
             PlayerData playerData = (PlayerData)binaryFormatter.Deserialize(fileStream);
             fileStream.Close();
             return playerData;
@@ -27,6 +30,7 @@ public static class SaveAndLoadManager
         else
         {
             Debug.LogError("No se encontró la partida");
+            MyFileExist = false;
             return null;
         }
     }
@@ -35,8 +39,8 @@ public static class SaveAndLoadManager
         string datapath = Application.persistentDataPath + "/playerdefault.data";
         if (File.Exists(datapath))
         {
-            FileStream fileStream = new FileStream(datapath, FileMode.Open);
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            FileStream fileStream = new(datapath, FileMode.Open);
+            BinaryFormatter binaryFormatter = new();
             PlayerData playerData = (PlayerData)binaryFormatter.Deserialize(fileStream);
             fileStream.Close();
             return playerData;

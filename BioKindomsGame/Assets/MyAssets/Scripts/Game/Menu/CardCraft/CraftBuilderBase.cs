@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-
 public abstract class CraftBuilderBase : MonoBehaviour
 {
     [SerializeField] protected CanvasManager _canvasManager;

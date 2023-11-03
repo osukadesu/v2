@@ -10,7 +10,7 @@ public class InventorySystemA2 : MonoBehaviour
     [SerializeField] InventoryUIA2 inventoryUIA2;
     void Start()
     {
-        instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventoryA2;
+        instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventory;
     }
     private void Awake()
     {

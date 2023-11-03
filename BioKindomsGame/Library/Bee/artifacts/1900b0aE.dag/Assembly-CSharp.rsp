@@ -370,6 +370,8 @@
 "Assets/MyAssets/Scripts/Game/IventorySystem/Animal/A5/ItemObjectA5.cs"
 "Assets/MyAssets/Scripts/Game/IventorySystem/InventoryItem.cs"
 "Assets/MyAssets/Scripts/Game/IventorySystem/InventoryItemData.cs"
+"Assets/MyAssets/Scripts/Game/IventorySystem/InventoryUITemplate.cs"
+"Assets/MyAssets/Scripts/Game/IventorySystem/ItemObjectTemplate.cs"
 "Assets/MyAssets/Scripts/Game/IventorySystem/ItemSlot.cs"
 "Assets/MyAssets/Scripts/Game/Menu/CameraAnimal.cs"
 "Assets/MyAssets/Scripts/Game/Menu/CameraTutorial.cs"

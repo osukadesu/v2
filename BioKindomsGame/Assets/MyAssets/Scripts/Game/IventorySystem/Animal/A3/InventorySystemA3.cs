@@ -11,7 +11,7 @@ public class InventorySystemA3 : MonoBehaviour
     [SerializeField] InventoryUIA3 inventoryUIA3;
     void Start()
     {
-        instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventoryA3;
+        instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventory;
     }
     private void Awake()
     {

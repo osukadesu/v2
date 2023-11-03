@@ -1,19 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class MenuButtons : MonoBehaviour
 {
     public void ButtonNewGame()
     {
         MenuController.instance.IsNewGame = true;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
     public void ButtonLoadGame()
     {
         MenuController.instance.IsLoadGame = true;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
     public void ButtonOptions()
     {
