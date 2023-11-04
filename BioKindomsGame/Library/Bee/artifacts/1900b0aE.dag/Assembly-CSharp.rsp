@@ -395,7 +395,6 @@
 "Assets/MyAssets/Scripts/Game/SaveLoadSystem/LoadGame.cs"
 "Assets/MyAssets/Scripts/Game/SaveLoadSystem/MenuButtons.cs"
 "Assets/MyAssets/Scripts/Game/SaveLoadSystem/MenuController.cs"
-"Assets/MyAssets/Scripts/Game/SaveLoadSystem/NewGame.cs"
 "Assets/MyAssets/Scripts/Game/SaveLoadSystem/PlayerData.cs"
 "Assets/MyAssets/Scripts/Game/SaveLoadSystem/SaveAndLoadManager.cs"
 "Assets/MyAssets/Scripts/Game/TxtTutorial.cs"

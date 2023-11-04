@@ -1,13 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class LoadController : MonoBehaviour
 {
     public LoadGame loadGame;
-    public NewGame newGame;
     public MenuController menuController;
-    private void Start()
+    public CraftBuilderBase craftBuilderBase;
+    public PlayerMove playerMove;
+    void Start()
     {
         menuController = FindObjectOfType<MenuController>();
         if (menuController.IsLoadGame)
@@ -16,7 +15,17 @@ public class LoadController : MonoBehaviour
         }
         if (menuController.IsNewGame)
         {
-            newGame.GoNewGame();
+            StartCoroutine("TimerNewToLoad");
         }
+    }
+    IEnumerator TimerNewToLoad()
+    {
+        GoInitialSave();
+        yield return new WaitForSeconds(1.5f);
+        loadGame.GoInitialLoad();
+    }
+    public void GoInitialSave()
+    {
+        SaveAndLoadManager.InitialSave(craftBuilderBase, playerMove);
     }
 }

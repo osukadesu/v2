@@ -1,51 +1,66 @@
-using System.Collections.Generic;
 using UnityEngine;
 public class LoadGame : MonoBehaviour
 {
     public CraftBuilderBase craftBuilderBase;
     public PlayerMove playerMove;
-    public ItemObject itemObjectA1;
+    public ItemObject[] itemObjectA1;
     public InventoryUI inventoryUI;
     public void GoLoadGame()
-    {   //refactorisar en metodo
+    {
         InventorySystem.instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
         PlayerData playerData = SaveAndLoadManager.LoadDataGame();
-        //refactorisar en metodo
-        craftBuilderBase._inventoryItemDatas[0].itemIsCheck = playerData.animal1[0];
-        craftBuilderBase._inventoryItemDatas[1].itemIsCheck = playerData.animal1[1];
-        craftBuilderBase._inventoryItemDatas[2].itemIsCheck = playerData.animal1[2];
-        craftBuilderBase._inventoryItemDatas[3].itemIsCheck = playerData.animal1[3];
-        craftBuilderBase._inventoryItemDatas[4].itemIsCheck = playerData.animal1[4];
-        craftBuilderBase.isCreated = playerData.isCreatedA1[0];
-        playerMove.transform.position = new Vector3(
-        playerData.position[0],
-        playerData.position[1],
-        playerData.position[2]
-         );
-        Debug.Log("Partida encontrada");
+        MappinAnimal1(playerData);
+        SetPlayerPosition(playerData);
+        Debug.Log("GoLoadGame");
         CheckingData(playerData);
     }
+    public void GoInitialLoad()
+    {
+        InventorySystem.instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
+        PlayerData playerData = SaveAndLoadManager.InitialLoad();
+        MappinAnimal1(playerData);
+        SetPlayerPosition(playerData);
+        Debug.Log("GoInitialLoad");
+        CheckingData(playerData);
+    }
+    public void SetPlayerPosition(PlayerData playerData)
+    {
+        playerMove.transform.position = new Vector3(
+            playerData.position[0],
+            playerData.position[1],
+            playerData.position[2]);
+    }
+    public void MappinAnimal1(PlayerData playerData)
+    {
+        craftBuilderBase._inventoryItemDatas[0].itemIsCheck = playerData.animal11;
+        craftBuilderBase._inventoryItemDatas[1].itemIsCheck = playerData.animal12;
+        craftBuilderBase._inventoryItemDatas[2].itemIsCheck = playerData.animal13;
+        craftBuilderBase._inventoryItemDatas[3].itemIsCheck = playerData.animal14;
+        craftBuilderBase._inventoryItemDatas[4].itemIsCheck = playerData.animal15;
+        craftBuilderBase.isCreated = playerData.isCreatedA1;
+    }
+
     public void CheckingData(PlayerData playerData)
     {
-        if (playerData.animal1[0])
+        if (playerData.animal11)
         {
-            itemObjectA1.OnHandlePickUpLoad();
+            itemObjectA1[0].OnHandlePickUpLoad();
         }
-        if (playerData.animal1[1])
+        if (playerData.animal12)
         {
-            itemObjectA1.OnHandlePickUpLoad();
+            itemObjectA1[1].OnHandlePickUpLoad();
         }
-        if (playerData.animal1[2])
+        if (playerData.animal13)
         {
-            itemObjectA1.OnHandlePickUpLoad();
+            itemObjectA1[2].OnHandlePickUpLoad();
         }
-        if (playerData.animal1[3])
+        if (playerData.animal14)
         {
-            itemObjectA1.OnHandlePickUpLoad();
+            itemObjectA1[3].OnHandlePickUpLoad();
         }
-        if (playerData.animal1[4])
+        if (playerData.animal15)
         {
-            itemObjectA1.OnHandlePickUpLoad();
+            itemObjectA1[4].OnHandlePickUpLoad();
         }
     }
 }
