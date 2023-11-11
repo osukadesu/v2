@@ -5,8 +5,7 @@ public class InfoContent : MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] InfoKindomData infoKindomData;
-    [SerializeField]
-    GameObject objec3D;
+    [SerializeField] GameObject objec3D;
     [SerializeField] Transform transform3D;
     [SerializeField] Text textName;
     [SerializeField] Text text2;
@@ -33,6 +32,8 @@ public class InfoContent : MonoBehaviour
         btnInfoAnimal3.onClick.AddListener(() => _canvasManager.InfoAnimal3());
         btnInfoAnimal4.onClick.AddListener(() => _canvasManager.InfoAnimal4());
         btnInfoAnimal5.onClick.AddListener(() => _canvasManager.InfoAnimal5());
+        objec3D = GameObject.FindGameObjectWithTag("object3D").GetComponent<GameObject>();
+        transform3D = GameObject.FindGameObjectWithTag("object3D").GetComponent<Transform>();
     }
     public void Configure(CanvasManager canvasManager)
     {

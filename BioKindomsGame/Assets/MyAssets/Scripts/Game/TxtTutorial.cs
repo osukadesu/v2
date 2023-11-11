@@ -1,16 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class TxtTutorial : MonoBehaviour
 {
     [SerializeField] Text txtTutorial;
     public Animator txtAnim;
     private void Start()
     {
-        if (MenuController.instance.IsNewGame)
+        if (MenuController.menuController.IsNewGame)
         {
             txtAnim.SetBool("txtinfogral", true);
             txtTutorial.text = "Ve por el mapa y guarda las cajas!";

@@ -7,13 +7,18 @@ public class ViewMenu : MonoBehaviour
     [SerializeField] Animator animTabView;
     [SerializeField] bool active;
     [SerializeField] Button btnClose;
+    [SerializeField] protected Text messageText;
+    void Awake()
+    {
+        messageText = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Text>();
+        animTabView = GameObject.FindGameObjectWithTag("cardMenuAnim").GetComponent<Animator>();
+        btnClose = GameObject.FindGameObjectWithTag("btnClose").GetComponent<Button>();
+        btnClose.onClick.AddListener(() => _canvasManager.ButtonCloseTab());
+        messageText.color = new Color(1, 1, 1, 1);
+    }
     void Update()
     {
         _canvasManager.TabViewMenu();
-    }
-    void Awake()
-    {
-        btnClose.onClick.AddListener(() => _canvasManager.ButtonCloseTab());
     }
     public void Configure(CanvasManager canvasManager)
     {
@@ -27,10 +32,12 @@ public class ViewMenu : MonoBehaviour
             animTabView.SetBool("tabview", active);
             if (active == false)
             {
+                messageText.color = new Color(1, 1, 1, 1);
                 _canvasManager.CloseTabViewv2();
             }
             else
             {
+                messageText.color = new Color(1, 0, 1, 1);
                 _canvasManager.ButtonGoAnimalV2();
             }
         }

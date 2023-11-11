@@ -10,7 +10,10 @@ public class ItemObjectA2 : ItemObjectTemplate
     }
     protected internal override void OnHandlePickUpLoad()
     {
-        InventorySystemA2.instance2.Add(referenceItem);
+        InventorySystemA2.instance2.Add(referenceItem); 
+        txtAnim.SetBool("txtinfogral", false);
+        messageText.text = "";
+        referenceItem.itemIsCheck = true;
         Destroy(gameObject);
     }
 }

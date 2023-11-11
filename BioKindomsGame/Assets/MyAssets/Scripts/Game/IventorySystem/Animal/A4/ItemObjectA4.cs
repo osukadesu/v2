@@ -13,6 +13,7 @@ public class ItemObjectA4 : ItemObjectTemplate
     protected internal override void OnHandlePickUpLoad()
     {
         InventorySystemA4.instance4.Add(referenceItem);
+        referenceItem.itemIsCheck = true;
         Destroy(gameObject);
     }
 }

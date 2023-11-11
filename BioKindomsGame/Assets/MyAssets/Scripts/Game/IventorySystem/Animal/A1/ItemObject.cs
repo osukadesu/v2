@@ -1,5 +1,3 @@
-using UnityEngine;
-using UnityEngine.UI;
 public class ItemObject : ItemObjectTemplate
 {
     protected internal override void OnHandlePickUp()
@@ -12,7 +10,10 @@ public class ItemObject : ItemObjectTemplate
     }
     protected internal override void OnHandlePickUpLoad()
     {
+        txtAnim.SetBool("txtinfogral", false);
+        messageText.text = "";
         InventorySystem.instance.Add(referenceItem);
+        referenceItem.itemIsCheck = true;
         Destroy(gameObject);
     }
 }

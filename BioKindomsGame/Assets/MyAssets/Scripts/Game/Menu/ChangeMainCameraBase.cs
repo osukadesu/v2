@@ -4,12 +4,9 @@ public abstract class ChangeMainCameraBase : MonoBehaviour
 {
     [SerializeField] protected Canvas canvas;
     [SerializeField] protected Camera myCamera;
-    void Awake()
-    {
-        canvas = GameObject.FindGameObjectWithTag("myCanvas").GetComponent<Canvas>();
-    }
     void Update()
     {
+        canvas = GameObject.FindGameObjectWithTag("myCanvas").GetComponent<Canvas>();
         ChangeCamera();
         CanvasSet();
     }

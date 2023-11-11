@@ -1,13 +1,68 @@
-using System;
 using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField] float jumpForce = 5, fallVelY, horizontalMove, verticalMove, playerSpeed = 8f, gravity = 9.8f;
+
+
+    [SerializeField] float horizontalMove, verticalMove, playerSpeed = 3.5f, rotationSpeed = .25f, jumpValue = 4f;
+    [SerializeField] Rigidbody playerRB;
+    [SerializeField] Animator myAnim;
+    [SerializeField] Vector3 moveDirection;
+    [SerializeField] bool canJump;
+    public bool CanJump
+    {
+        get { return canJump; }
+        set { canJump = value; }
+    }
+
+    void Awake()
+    {
+        playerRB = FindObjectOfType<Rigidbody>();
+    }
+    void Start()
+    {
+        canJump = false;
+        myAnim.SetBool("idle", true);
+        myAnim.SetBool("run", false);
+    }
+    void Update()
+    {
+        horizontalMove = Input.GetAxisRaw("Horizontal");
+        verticalMove = Input.GetAxisRaw("Vertical");
+        moveDirection = new(horizontalMove, 0, verticalMove);
+        moveDirection.Normalize();
+        transform.position = transform.position + moveDirection * playerSpeed * Time.deltaTime;
+        if (moveDirection != Vector3.zero) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDirection), rotationSpeed);
+        AnimationsSett();
+        if (canJump)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                playerRB.AddForce(new(0, jumpValue, 0), ForceMode.Impulse);
+            }
+        }
+    }
+    void AnimationsSett()
+    {
+        if (horizontalMove != 0f || verticalMove != 0f)
+        {
+            myAnim.SetBool("idle", false);
+            myAnim.SetBool("run", true);
+        }
+        else
+        {
+            myAnim.SetBool("idle", true);
+            myAnim.SetBool("run", false);
+        }
+    }
+}
+/*
+-------------------------------------------------------------------------------------------------------------------------------------------
+    
+    [SerializeField] float jumpForce = 4, fallVelY, horizontalMove, verticalMove, playerSpeed = 8f, gravity = 9.8f;
     [SerializeField] CharacterController player;
     [SerializeField] Vector3 playerInput, camForward, camRight, movePlayer;
     [SerializeField] Camera myCamera;
     [SerializeField] Animator myAnim;
-
     void Start()
     {
         myAnim.SetBool("idle", true);
@@ -67,4 +122,4 @@ public class PlayerMove : MonoBehaviour
         camForward = camForward.normalized;
         camRight = camRight.normalized;
     }
-}
+*/

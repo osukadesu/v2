@@ -16,7 +16,7 @@ public class TimerPresentation : MonoBehaviour
         myTimer += 1f * Time.deltaTime;
         if (myTimer >= 4.2f)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 }

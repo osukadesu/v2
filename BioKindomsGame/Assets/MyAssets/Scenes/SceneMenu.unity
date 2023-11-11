@@ -5683,8 +5683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af49c13b57382e240b57605c1e2cebfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnLoadGame: {fileID: 713667215}
-  verticalLayoutGroup: {fileID: 1599157837}
   isNewGame: 0
   isLoadGame: 0
 --- !u!82 &569722157
@@ -5699,9 +5697,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cdb81eb857276ff41a3eb52ceab2e473, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6029,7 +6027,7 @@ GameObject:
   - component: {fileID: 713667216}
   m_Layer: 5
   m_Name: ButtonLoadGame
-  m_TagString: Untagged
+  m_TagString: btnLoadGame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7025,6 +7023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa50bcc790d85d448931398091d40b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btnLoadGame: {fileID: 0}
+  verticalLayoutGroup: {fileID: 0}
 --- !u!4 &1986926668
 Transform:
   m_ObjectHideFlags: 0

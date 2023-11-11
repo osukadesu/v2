@@ -1,16 +1,15 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class CanvasManager : MonoBehaviour
 {
     [SerializeField] ViewMenu _viewMenu;
     [SerializeField] CardMenu _cardMenu;
     [SerializeField] CardCraftingContent _cardCraftingContent;
     [SerializeField] InfoContent _infoContent;
-    [SerializeField] CraftAnimal1 _craftAnimal1;
-    [SerializeField] CraftAnimal2 _craftAnimal2;
-    [SerializeField] CraftAnimal3 _craftAnimal3;
-    [SerializeField] CraftAnimal4 _craftAnimal4;
-    [SerializeField] CraftAnimal5 _craftAnimal5;
+    [SerializeField] CraftBuilderSystem _craftBuilderSystem;
+    [SerializeField] PrincipalMenuView _principalMenuView;
     [SerializeField] int menuCode, infoCodes, craftinCode, buildCode;
     public int MenuCode { get { return menuCode; } set { menuCode = value; } }
     public int InfoCode { get { return infoCodes; } set { infoCodes = value; } }
@@ -22,17 +21,18 @@ public class CanvasManager : MonoBehaviour
         _cardMenu.Configure(this);
         _infoContent.Configure(this);
         _cardCraftingContent.Configure(this);
-        _craftAnimal1.Configure(this);
-        _craftAnimal2.Configure(this);
-        _craftAnimal3.Configure(this);
-        _craftAnimal4.Configure(this);
-        _craftAnimal5.Configure(this);
+        _craftBuilderSystem.Configure(this);
+        _principalMenuView.Configure(this);
         ClosingAll();
     }
     public void ButtonGoAnimalV2()
     {
         menuCode = 1;
         _cardMenu.SetContent();
+    }
+    public void PrincipalMenuViewMethod()
+    {
+        _principalMenuView.PrincipalMenuViewMethod();
     }
     public void ButtonGoAnimal()
     {
@@ -88,35 +88,35 @@ public class CanvasManager : MonoBehaviour
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        _craftAnimal1.ButtonBuild();
+        _craftBuilderSystem.ButtonBuildAnimal1();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal2()
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        _craftAnimal2.ButtonBuild();
+        //_craftAnimal2.ButtonBuild();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal3()
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        _craftAnimal3.ButtonBuild();
+        // _craftAnimal3.ButtonBuild();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal4()
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        _craftAnimal4.ButtonBuild();
+        //_craftAnimal4.ButtonBuild();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal5()
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        _craftAnimal5.ButtonBuild();
+        //_craftAnimal5.ButtonBuild();
         ButtonGoAnimalV2();
     }
     public void ButtonContentClose()

@@ -1,20 +1,21 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonSave
+    - CameraAnimal
+    - CameraTutorial
     - CameraView
     - CanvasManager
-    - CardCraftingAnimals
-    - CardCraftingFungi
-    - CardCraftingMonera
-    - CardCraftingProtista
-    - CardCraftingVegetals
-    - CardInfoAnimals
-    - CardInfoFungis
-    - CardInfoMoneras
-    - CardInfoProtistas
-    - CardInfoVegetals
-    - CraftingAnimal1
-    - CraftingAnimal2
+    - CardCraftingContent
+    - CardMenu
+    - CraftAnimal1
+    - CraftAnimal2
+    - CraftAnimal3
+    - CraftAnimal4
+    - CraftAnimal5
+    - GameOver
+    - InfoContent
+    - InfoKindomData
     - InventoryItemData
     - InventorySystem
     - InventorySystemA2
@@ -27,26 +28,30 @@ ScriptsOnlyBuild:
     - InventoryUIA4
     - InventoryUIA5
     - ItemObject
+    - ItemObjectA2
     - ItemSlot
-    - MenuAnimationsAnimal
-    - MenuAnimationsFungi
-    - MenuAnimationsMonera
-    - MenuAnimationsProtista
-    - MenuAnimationsVegetal
+    - LoadController
+    - LoadGame
+    - MenuAnimations
     - MenuButtons
     - MenuController
+    - MoveInPlataform
     - Pisar
+    - PlataformMove
     - PlayerMove
+    - RotateObject
+    - SingletonUi
     - TimerPresentation
-    - TxtTutorial
     - ViewMenu
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -97,7 +102,7 @@ ScriptsOnlyBuild:
     fullTypeName: MenuButtons
     methodName: ButtonOptions
   sceneClasses:
-    Assets/MyAssets/Scenes/SceneGame.unity:
+    Assets/MyAssets/Scenes/SceneAnimalGame.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -128,8 +133,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -139,106 +142,16 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1516}
+      Script: {instanceID: 3766}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 3896}
     - Class: 114
-      Script: {instanceID: 1588}
+      Script: {instanceID: 5104}
     - Class: 114
-      Script: {instanceID: 1622}
-    - Class: 114
-      Script: {instanceID: 1742}
-    - Class: 114
-      Script: {instanceID: 1776}
-    - Class: 114
-      Script: {instanceID: 1970}
-    - Class: 114
-      Script: {instanceID: 2456}
-    - Class: 114
-      Script: {instanceID: 2528}
-    - Class: 114
-      Script: {instanceID: 2606}
-    - Class: 114
-      Script: {instanceID: 2706}
-    - Class: 114
-      Script: {instanceID: 2814}
-    - Class: 114
-      Script: {instanceID: 3004}
-    - Class: 114
-      Script: {instanceID: 3102}
-    - Class: 114
-      Script: {instanceID: 3174}
-    - Class: 114
-      Script: {instanceID: 3228}
-    - Class: 114
-      Script: {instanceID: 3278}
-    - Class: 114
-      Script: {instanceID: 3306}
-    - Class: 114
-      Script: {instanceID: 3368}
-    - Class: 114
-      Script: {instanceID: 3568}
-    - Class: 114
-      Script: {instanceID: 3596}
-    - Class: 114
-      Script: {instanceID: 3772}
-    - Class: 114
-      Script: {instanceID: 3840}
-    - Class: 114
-      Script: {instanceID: 3906}
-    - Class: 114
-      Script: {instanceID: 4214}
-    - Class: 114
-      Script: {instanceID: 4402}
-    - Class: 114
-      Script: {instanceID: 4578}
-    - Class: 114
-      Script: {instanceID: 4646}
-    - Class: 114
-      Script: {instanceID: 4834}
-    - Class: 114
-      Script: {instanceID: 5074}
-    - Class: 114
-      Script: {instanceID: 5112}
-    - Class: 114
-      Script: {instanceID: 5700}
-    - Class: 114
-      Script: {instanceID: 5858}
-    - Class: 114
-      Script: {instanceID: 6184}
-    - Class: 114
-      Script: {instanceID: 6192}
-    - Class: 114
-      Script: {instanceID: 6480}
-    - Class: 114
-      Script: {instanceID: 6774}
-    - Class: 114
-      Script: {instanceID: 6944}
-    - Class: 114
-      Script: {instanceID: 6950}
-    - Class: 114
-      Script: {instanceID: 7002}
-    - Class: 114
-      Script: {instanceID: 7246}
-    - Class: 114
-      Script: {instanceID: 7284}
-    - Class: 114
-      Script: {instanceID: 7288}
-    - Class: 114
-      Script: {instanceID: 7422}
-    - Class: 114
-      Script: {instanceID: 7540}
-    - Class: 114
-      Script: {instanceID: 7576}
-    - Class: 114
-      Script: {instanceID: 7684}
-    - Class: 114
-      Script: {instanceID: 7708}
+      Script: {instanceID: 6960}
     - Class: 114
       Script: {instanceID: 7718}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -256,13 +169,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 218
       Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
+    - Class: 258
       Script: {instanceID: 0}
     Assets/MyAssets/Scenes/SceneMenu.unity:
     - Class: 1
@@ -290,25 +197,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1776}
+      Script: {instanceID: 1774}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 5700}
+      Script: {instanceID: 5698}
     - Class: 114
-      Script: {instanceID: 6096}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 6184}
+      Script: {instanceID: 6188}
     - Class: 114
-      Script: {instanceID: 6602}
+      Script: {instanceID: 6612}
     - Class: 114
-      Script: {instanceID: 7474}
+      Script: {instanceID: 7488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -328,6 +235,173 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/MyAssets/Scenes/SceneNewGame.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1516}
+    - Class: 114
+      Script: {instanceID: 1550}
+    - Class: 114
+      Script: {instanceID: 1564}
+    - Class: 114
+      Script: {instanceID: 1740}
+    - Class: 114
+      Script: {instanceID: 1774}
+    - Class: 114
+      Script: {instanceID: 2522}
+    - Class: 114
+      Script: {instanceID: 2600}
+    - Class: 114
+      Script: {instanceID: 2696}
+    - Class: 114
+      Script: {instanceID: 2702}
+    - Class: 114
+      Script: {instanceID: 2812}
+    - Class: 114
+      Script: {instanceID: 3002}
+    - Class: 114
+      Script: {instanceID: 3008}
+    - Class: 114
+      Script: {instanceID: 3104}
+    - Class: 114
+      Script: {instanceID: 3176}
+    - Class: 114
+      Script: {instanceID: 3278}
+    - Class: 114
+      Script: {instanceID: 3418}
+    - Class: 114
+      Script: {instanceID: 3766}
+    - Class: 114
+      Script: {instanceID: 3834}
+    - Class: 114
+      Script: {instanceID: 3900}
+    - Class: 114
+      Script: {instanceID: 4020}
+    - Class: 114
+      Script: {instanceID: 4210}
+    - Class: 114
+      Script: {instanceID: 4298}
+    - Class: 114
+      Script: {instanceID: 4826}
+    - Class: 114
+      Script: {instanceID: 5064}
+    - Class: 114
+      Script: {instanceID: 5104}
+    - Class: 114
+      Script: {instanceID: 5156}
+    - Class: 114
+      Script: {instanceID: 5698}
+    - Class: 114
+      Script: {instanceID: 5814}
+    - Class: 114
+      Script: {instanceID: 5822}
+    - Class: 114
+      Script: {instanceID: 5948}
+    - Class: 114
+      Script: {instanceID: 6068}
+    - Class: 114
+      Script: {instanceID: 6188}
+    - Class: 114
+      Script: {instanceID: 6196}
+    - Class: 114
+      Script: {instanceID: 6484}
+    - Class: 114
+      Script: {instanceID: 6544}
+    - Class: 114
+      Script: {instanceID: 6610}
+    - Class: 114
+      Script: {instanceID: 6784}
+    - Class: 114
+      Script: {instanceID: 6910}
+    - Class: 114
+      Script: {instanceID: 6960}
+    - Class: 114
+      Script: {instanceID: 7012}
+    - Class: 114
+      Script: {instanceID: 7256}
+    - Class: 114
+      Script: {instanceID: 7298}
+    - Class: 114
+      Script: {instanceID: 7364}
+    - Class: 114
+      Script: {instanceID: 7384}
+    - Class: 114
+      Script: {instanceID: 7436}
+    - Class: 114
+      Script: {instanceID: 7568}
+    - Class: 114
+      Script: {instanceID: 7718}
+    - Class: 114
+      Script: {instanceID: 7728}
+    - Class: 114
+      Script: {instanceID: 7770}
+    - Class: 114
+      Script: {instanceID: 7892}
+    - Class: 114
+      Script: {instanceID: 7930}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -365,19 +439,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1716}
+      Script: {instanceID: 1714}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3906}
+      Script: {instanceID: 3900}
     - Class: 114
-      Script: {instanceID: 5700}
+      Script: {instanceID: 5698}
     - Class: 114
-      Script: {instanceID: 6184}
+      Script: {instanceID: 6188}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -409,22 +483,16 @@ ScriptsOnlyBuild:
     className: PanelRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 0910525bd7232332a5aa9dd64587ee8b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CardCraftingContent
+  - hash:
+      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: 0a6c8e57e36ff63fa9a35d937e3bf122
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuAnimationsFungi
-  - hash:
-      serializedVersion: 2
-      Hash: 548d7cd3206003a37a0f715b671e5ede
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardInfoProtistas
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -505,12 +573,6 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
-      Hash: 69d14404ae9b3d9d86918bf48fe72146
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuAnimationsVegetal
-  - hash:
-      serializedVersion: 2
       Hash: 022e81ec656d9f6b2e80875333027cfc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -569,12 +631,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
-  - hash:
-      serializedVersion: 2
-      Hash: b0760be0ece075b589abd57321f8ff32
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardInfoVegetals
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -637,7 +693,13 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
-      Hash: 4f63b26a89b13f8fc3c08dd22afc224c
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotateObject
+  - hash:
+      serializedVersion: 2
+      Hash: a99b0f1135464cc8e2847c0845607d41
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemSlot
@@ -733,6 +795,12 @@ ScriptsOnlyBuild:
     className: InventorySystemA3
   - hash:
       serializedVersion: 2
+      Hash: 57c2d79e744770e3563412d0fea936b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CraftAnimal5
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -781,12 +849,6 @@ ScriptsOnlyBuild:
     className: UnityOnScrollMessageListener
   - hash:
       serializedVersion: 2
-      Hash: edb3efc77638e7f8322d7424eb0e7b72
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardInfoFungis
-  - hash:
-      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -805,12 +867,6 @@ ScriptsOnlyBuild:
     className: VariablesAsset
   - hash:
       serializedVersion: 2
-      Hash: 009aacdca0c6b7b543706613c2becd14
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardInfoAnimals
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -823,16 +879,16 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
-      Hash: 995c32b4232a4f26708526bae7024222
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuAnimationsProtista
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSelectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 57c2d79e744770e3563412d0fea936b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CraftAnimal3
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -865,12 +921,6 @@ ScriptsOnlyBuild:
     className: TextMeshPro
   - hash:
       serializedVersion: 2
-      Hash: 25b2c265254eafebde7d95ed4a0174f8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuAnimationsMonera
-  - hash:
-      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -883,19 +933,13 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6eafffe4b85aca1a5c1d2e53eef5d1f3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardInfoMoneras
-  - hash:
-      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 4581e4e1df72aabc344d3661acc71e06
+      Hash: 2b785462404a3b9fa6bcbb33fe6398c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMove
@@ -941,6 +985,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineGroupComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 57c2d79e744770e3563412d0fea936b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CraftAnimal4
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1033,6 +1083,12 @@ ScriptsOnlyBuild:
     className: GroupWeightManipulator
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SingletonUi
+  - hash:
+      serializedVersion: 2
       Hash: 56df1fa7cea034df9863fe5a24200a32
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1043,12 +1099,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
-  - hash:
-      serializedVersion: 2
-      Hash: 87d9b77b4702c0d0d00d6a8527fbfc07
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CraftingAnimal1
   - hash:
       serializedVersion: 2
       Hash: 75de60bccbd35c2e82026d4a60733734
@@ -1075,22 +1125,10 @@ ScriptsOnlyBuild:
     className: CinemachinePOV
   - hash:
       serializedVersion: 2
-      Hash: 4a22c6fbc0cc4139efaf86917e879a00
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CanvasManager
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e979eb59d8d52823cae93a4f18e4c6a2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardCraftingVegetals
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1133,12 +1171,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryUIA4
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CraftingCode
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1217,6 +1249,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 778a2eb0100227e8a44a899434ae4fd1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadGame
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1321,10 +1359,16 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 7e62435141b814343ca06b6c6c922a5b
+      Hash: 912d8ab132ce25f7a491ffa55263c67a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CardCraftingMonera
+    className: LoadController
+  - hash:
+      serializedVersion: 2
+      Hash: a43412ca8a496165bd8ba63853d80dae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlataformMove
   - hash:
       serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
@@ -1333,10 +1377,22 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 1ccc49745220abb3711ddc0fbac94f74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InfoKindomData
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 6a529b24f9ba3a4d55cdbb065bee2a25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraAnimal
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1393,10 +1449,10 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: bae9bb7b28a463f0212bbc8ab089c92c
+      Hash: 011d39ae9cae0bd23d7632ef59ef831b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MenuAnimationsAnimal
+    className: MenuAnimations
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1411,6 +1467,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 57c2d79e744770e3563412d0fea936b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CraftAnimal1
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1421,6 +1483,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -1501,6 +1569,12 @@ ScriptsOnlyBuild:
     className: UnityOnScrollRectValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 57c2d79e744770e3563412d0fea936b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CraftAnimal2
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1523,12 +1597,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSubmitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 893adba4713f030f1f4701437a604653
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardCraftingFungi
   - hash:
       serializedVersion: 2
       Hash: cbeba0be93684d3bcd4b72542d830f58
@@ -1603,10 +1671,22 @@ ScriptsOnlyBuild:
     className: CinemachineStoryboard
   - hash:
       serializedVersion: 2
+      Hash: 27de830faff93c654c5b1f9b690c6307
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CanvasManager
+  - hash:
+      serializedVersion: 2
       Hash: 23d669c8bf2983ca4a3df160658318a6
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineStateDrivenCamera
+  - hash:
+      serializedVersion: 2
+      Hash: c669c48582a2b3f67bd01579add55711
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InfoContent
   - hash:
       serializedVersion: 2
       Hash: 99310d1f2af6bba195edaaa614837cf2
@@ -1627,7 +1707,7 @@ ScriptsOnlyBuild:
     className: ItemObjectA5
   - hash:
       serializedVersion: 2
-      Hash: d23b908e6eaac4c565c6f46e5b3f41de
+      Hash: 2c31c44fe06ace9615b79d2331870a25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuController
@@ -1645,22 +1725,16 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
-      Hash: 2cd37817792d735c859b24d4d762a35f
+      Hash: cd2cd4306d9effa6830ed4faf4ef97ec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CardCraftingProtista
+    className: ButtonSave
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateMachine
-  - hash:
-      serializedVersion: 2
-      Hash: 82926d4e8119a3106b9db61078534557
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardCraftingAnimals
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1675,13 +1749,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: bb7aa0b40580f6586c0183b09fa2c75a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CraftingAnimal2
-  - hash:
-      serializedVersion: 2
-      Hash: 3adfda553adf4ed6d8d25b0987770445
+      Hash: fba0ab3e27ee8e917a950cc4f4ec101b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryItemData
@@ -1699,6 +1767,12 @@ ScriptsOnlyBuild:
     className: InventoryUIA3
   - hash:
       serializedVersion: 2
+      Hash: 40f127a25c168015aebfadb290ded437
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveInPlataform
+  - hash:
+      serializedVersion: 2
       Hash: b5c3dbcb94925c8b595ad16a62b44788
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1709,6 +1783,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 6f7d55d668897dc7a3d9119059687204
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CardMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 6a529b24f9ba3a4d55cdbb065bee2a25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraTutorial
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1739,21 +1825,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 1a002f4fb8f0016a8b85fd2c39616337
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: InfoKindomData
-  - hash:
-      serializedVersion: 2
-      Hash: 7a82fb7b99fc554fc35d6cca07f49695
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: InfoContent
   platform: 19
   scenePathNames:
   - Assets/MyAssets/Scenes/ScenePresentation.unity
   - Assets/MyAssets/Scenes/SceneMenu.unity
-  - Assets/MyAssets/Scenes/SceneGame.unity
+  - Assets/MyAssets/Scenes/SceneNewGame.unity
+  - Assets/MyAssets/Scenes/SceneAnimalGame.unity
   playerPath: C:/Users/oscar/Desktop/Testing/BioKindomsGame.exe

@@ -3,36 +3,26 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
-    public static MenuController instance;
-    [SerializeField] GameObject btnLoadGame;
-    [SerializeField] VerticalLayoutGroup verticalLayoutGroup;
+    public static MenuController menuController;
     [SerializeField] bool isNewGame, isLoadGame;
     public bool IsNewGame { get { return isNewGame; } set { isNewGame = value; } }
     public bool IsLoadGame { get { return isLoadGame; } set { isLoadGame = value; } }
-    void Start()
-    {
-        verticalLayoutGroup = GameObject.FindGameObjectWithTag("menuGameVL").GetComponent<VerticalLayoutGroup>();
-        isNewGame = false;
-        isLoadGame = false;
-        MenuOrder();
-    }
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        instance = this;
+        Singleton();
+        isNewGame = false;
+        isLoadGame = false;
     }
-    public void MenuOrder()
+    private void Singleton()
     {
-        string datapath = Application.persistentDataPath + "/player.data";
-        if (File.Exists(datapath))
+        if (menuController == null)
         {
-            btnLoadGame.SetActive(true);
-            verticalLayoutGroup.padding.top = 0;
+            menuController = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            btnLoadGame.SetActive(false);
-            verticalLayoutGroup.padding.top = 70;
+            Destroy(gameObject);
         }
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 public class InventorySystem : MonoBehaviour
@@ -8,17 +7,24 @@ public class InventorySystem : MonoBehaviour
     public event onInventoryChangedEvent OnInventoryChangedEventCallBack;
     public Dictionary<InventoryItemData, InventoryItem> _itemDictionary;
     public List<InventoryItem> inventoryItems;
-    public InventoryUI inventoryUI;
-    void Start()
-    {
-        instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
-    }
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
         inventoryItems = new List<InventoryItem>();
         _itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
+        //Singleton();
         instance = this;
+    }
+    private void Singleton()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void Add(InventoryItemData referenceData)
     {

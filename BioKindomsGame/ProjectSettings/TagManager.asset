@@ -9,6 +9,17 @@ TagManager:
   - animalCam
   - myCanvas
   - menuGameVL
+  - btnLoadGame
+  - btnSave
+  - IOA1P1
+  - IOA1P2
+  - IOA1P3
+  - IOA1P4
+  - IOA1P5
+  - cardMenuAnim
+  - btnClose
+  - object3D
+  - objectMovin
   layers:
   - Default
   - TransparentFX

@@ -6,23 +6,23 @@ public abstract class ItemObjectTemplate : MonoBehaviour
     [SerializeField] protected InventoryItemData referenceItem;
     [SerializeField] protected Text messageText;
     [SerializeField] protected bool item;
+    void Awake()
+    {
+        txtAnim = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Animator>();
+        messageText = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Text>();
+    }
     void Start()
     {
         item = false;
         messageText.text = "";
         txtAnim.SetBool("txtinfogral", false);
-    }
-    void Awake()
-    {
-        txtAnim = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Animator>();
-        messageText = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Text>();
         referenceItem.itemIsCheck = false;
     }
     void Update()
     {
         if (item && Input.GetKeyDown(KeyCode.E))
         {
-            txtAnim.SetBool("txtinfogral", false);
+            txtAnim.SetBool("txtinfogral", true);
             OnHandlePickUp();
         }
         else
@@ -30,9 +30,7 @@ public abstract class ItemObjectTemplate : MonoBehaviour
             referenceItem.itemIsCheck = false;
         }
     }
-    protected internal abstract void OnHandlePickUp();
-    protected internal abstract void OnHandlePickUpLoad();
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -41,7 +39,7 @@ public abstract class ItemObjectTemplate : MonoBehaviour
             item = true;
         }
     }
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -50,4 +48,7 @@ public abstract class ItemObjectTemplate : MonoBehaviour
             item = false;
         }
     }
+    protected internal abstract void OnHandlePickUp();
+    protected internal abstract void OnHandlePickUpLoad();
+
 }

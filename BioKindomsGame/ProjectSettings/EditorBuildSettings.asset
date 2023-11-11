@@ -8,14 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyAssets/Scenes/ScenePresentation.unity
     guid: 6655d9744686ef945b8761f96c9d7108
-  - enabled: 0
-    path: Assets/MyAssets/Scenes/SceneLogin.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/MyAssets/Scenes/SceneMenu.unity
     guid: 1344a42557396794fa4328d8f0c4c8ef
   - enabled: 1
-    path: Assets/MyAssets/Scenes/SceneNewGame.unity
+    path: Assets/MyAssets/Scenes/SceneGame.unity
     guid: b5d9b232345b962488ed678271dc51fb
   - enabled: 1
     path: Assets/MyAssets/Scenes/SceneAnimalGame.unity

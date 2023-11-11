@@ -15,10 +15,21 @@ public class InventorySystemA5 : MonoBehaviour
     }
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
         inventoryItems = new List<InventoryItem>();
         _itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
-        instance5 = this;
+        Singleton();
+    }
+    private void Singleton()
+    {
+        if (instance5 != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance5 = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
     public void Add(InventoryItemData referenceData)
     {

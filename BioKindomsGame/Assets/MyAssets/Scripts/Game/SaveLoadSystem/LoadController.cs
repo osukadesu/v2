@@ -1,31 +1,26 @@
-using System.Collections;
 using UnityEngine;
 public class LoadController : MonoBehaviour
 {
-    public LoadGame loadGame;
-    public MenuController menuController;
-    public CraftBuilderBase craftBuilderBase;
-    public PlayerMove playerMove;
-    void Start()
+    [SerializeField] LoadGame loadGame;
+    [SerializeField] MenuController menuController;
+    [SerializeField] int valueLevel;
+    public int ValueLevel { get { return valueLevel; } }
+    void Awake()
     {
+        loadGame = FindObjectOfType<LoadGame>();
         menuController = FindObjectOfType<MenuController>();
+        LoadControllerMethod();
+    }
+    private void LoadControllerMethod()
+    {
+        if (menuController.IsNewGame)
+        {
+            valueLevel = 1;
+            loadGame.GoNewGame();
+        }
         if (menuController.IsLoadGame)
         {
             loadGame.GoLoadGame();
         }
-        if (menuController.IsNewGame)
-        {
-            StartCoroutine("TimerNewToLoad");
-        }
-    }
-    IEnumerator TimerNewToLoad()
-    {
-        GoInitialSave();
-        yield return new WaitForSeconds(1.5f);
-        loadGame.GoInitialLoad();
-    }
-    public void GoInitialSave()
-    {
-        SaveAndLoadManager.InitialSave(craftBuilderBase, playerMove);
     }
 }

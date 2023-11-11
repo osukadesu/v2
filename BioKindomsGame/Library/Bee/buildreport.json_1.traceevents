@@ -1,578 +1,594 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1696364915458022, "dur": 8367143, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364915458397, "dur": 73361, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364915531762, "dur": 194173, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364915725937, "dur": 1869716, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364917595656, "dur": 6222803, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364923818461, "dur": 6703, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364923915922, "dur": 17, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292022890029, "dur": 3645235, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292022890436, "dur": 29051, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292022919489, "dur": 166845, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292023086560, "dur": 1599572, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292024686135, "dur": 1842805, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292026528942, "dur": 6320, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292026536456, "dur": 16, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1696364915685316, "dur":2012, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915687340, "dur":258, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1696364915687644, "dur":23, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1696364915687667, "dur":220, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1696364915687921, "dur":889, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915688810, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915690857, "dur":203, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691060, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691073, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691078, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691090, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691094, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691102, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691105, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691115, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691116, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915691149, "dur":1983, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1696364915689645, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364915689646, "dur":1193, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364915689660, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364915689660, "dur":1184, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364915689307, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364915689308, "dur":1528, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364915689707, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364915689708, "dur":1144, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364915694906, "dur":369, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1696364923916104, "dur": 336, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1699292023010088, "dur":1906, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023012006, "dur":269, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1699292023012319, "dur":22, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1699292023012341, "dur":259, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1699292023012637, "dur":799, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023013436, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071019, "dur":11, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071030, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071043, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071046, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071057, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071060, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071068, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071071, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071080, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071081, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023071120, "dur":3543, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1699292023013179, "dur":287, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292023013469, "dur":57238, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292023013235, "dur":253, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292023013488, "dur":57453, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292023013319, "dur":191, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292023013510, "dur":57380, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292023013394, "dur":139, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292023013533, "dur":57278, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292023078164, "dur":954, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1699292026540210, "dur": 340, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1696364917189892, "dur": 379537, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1696364917191360, "dur": 84826, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1696364917474474, "dur": 73437, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1696364917547916, "dur": 21495, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1696364917549119, "dur": 19124, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1696364917579058, "dur": 2468, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1696364917575283, "dur": 6307, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364923916523, "dur": 380, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024384212, "dur": 278039, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024385994, "dur": 69361, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024566104, "dur": 77788, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024643897, "dur": 18340, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024645086, "dur": 15949, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024669884, "dur": 1942, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1699292024668633, "dur": 3236, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292026540635, "dur": 383, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1696364917662587, "dur":4164, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364917666778, "dur":1801, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1696364917668618, "dur":23, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1696364917668642, "dur":288, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1696364917668960, "dur":752, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364917669713, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609160, "dur":171, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609331, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609344, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609347, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609357, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609360, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609368, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609371, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609381, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609403, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923609443, "dur":2421, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1696364917669467, "dur":253, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917669722, "dur":6901, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917676637, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1696364917676642, "dur":257, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917676907, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1696364917676910, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917676967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917707741, "dur":19504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1696364917727256, "dur":31946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1696364917759203, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917759292, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917759557, "dur":50108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1696364917809715, "dur":102126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1696364917911842, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917911976, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917911990, "dur":1515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1696364917913567, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1696364917913807, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917913868, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364917913879, "dur":29884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1696364917943888, "dur":155763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364918099652, "dur":413, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364918100087, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364918100934, "dur":1781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364918102765, "dur":834546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame.exe" }}
-,{ "pid":12345, "tid":1, "ts":1696364918937312, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364918937439, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364918937447, "dur":1572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame.exe" }}
-,{ "pid":12345, "tid":1, "ts":1696364918939070, "dur":123931, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919063001, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919063104, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919063122, "dur":13593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919076767, "dur":47462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919124230, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919124313, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919124322, "dur":5179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919129555, "dur":31062, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919160618, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919160703, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919160714, "dur":1091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919161853, "dur":28834, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919190734, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919190852, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919190890, "dur":1054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919191992, "dur":41984, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919233977, "dur":2184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919236174, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919236185, "dur":1269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919237504, "dur":21122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919258627, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919258728, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919258738, "dur":1063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919259848, "dur":52055, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919311904, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919311976, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919311985, "dur":1023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919313056, "dur":292680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919605737, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919605838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364919605847, "dur":1144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364919607042, "dur":537732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920144775, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920144857, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920144867, "dur":2351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920147328, "dur":24757, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920172086, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920172161, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920172172, "dur":1106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920173331, "dur":256538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920429869, "dur":11615, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920441498, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920441511, "dur":2914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920444483, "dur":59716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920504200, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920504310, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920504321, "dur":1044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920505412, "dur":120764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920626176, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920626254, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920626265, "dur":1172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920627482, "dur":46267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920673750, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920673858, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920673869, "dur":1012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920674926, "dur":68592, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920743519, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920743596, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364920743605, "dur":1103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364920744754, "dur":259833, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921004588, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921004672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921004683, "dur":1086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921005818, "dur":134759, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921140578, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921140651, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921140661, "dur":1044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921141753, "dur":70361, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921212115, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921212185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921212195, "dur":1634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921213886, "dur":329975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921543862, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921544008, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921544021, "dur":32621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921576692, "dur":119454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921696157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921696167, "dur":9253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921705474, "dur":282966, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921988451, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364921988461, "dur":1526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364921990038, "dur":243539, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364922233578, "dur":480, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364922234069, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364922234166, "dur":2379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364922236597, "dur":140094, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364922376692, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364922376774, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364922376785, "dur":283366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364922660204, "dur":945671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364923605876, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364923605982, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696364923605992, "dur":3085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696364923609129, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":1, "ts":1696364923609132, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917669533, "dur":207, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917669740, "dur":6996, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917676737, "dur":109632, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1696364917786378, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917786460, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917786486, "dur":1289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1696364917787824, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1696364917787949, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917788062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917788071, "dur":28899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1696364917817030, "dur":1215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1696364917818246, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917818310, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917818386, "dur":53233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1696364917871673, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1696364917871809, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917871865, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917872282, "dur":21256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1696364917893587, "dur":2158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1696364917895745, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917895812, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917895901, "dur":25380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1696364917921330, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1696364917921470, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917921518, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364917921527, "dur":34383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1696364917955981, "dur":4023589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696364921979571, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364921979659, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364921979669, "dur":31716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696364922011439, "dur":1208131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696364923219571, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364923219688, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696364923219698, "dur":2285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696364923222033, "dur":387110, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917669582, "dur":164, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917669746, "dur":6889, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917676638, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1696364917676807, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917676911, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917708180, "dur":33850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1696364917742082, "dur":64679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1696364917806761, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917806867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917806877, "dur":1485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1696364917808407, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1696364917808524, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917808575, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917808967, "dur":53603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1696364917862619, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1696364917862734, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917862778, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917862787, "dur":21046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1696364917883921, "dur":40518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1696364917924439, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917924526, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917924537, "dur":1089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1696364917925673, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1696364917925784, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917925826, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364917925834, "dur":40763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1696364917966651, "dur":305494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":3, "ts":1696364918272146, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918272329, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918272340, "dur":17360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":3, "ts":1696364918289750, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":3, "ts":1696364918289907, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918289996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918290323, "dur":118007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":3, "ts":1696364918408385, "dur":409270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364918817656, "dur":508, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918818184, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918818640, "dur":1065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364918819759, "dur":35919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364918855679, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918855776, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364918855876, "dur":1036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364918856963, "dur":231761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919088725, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919088824, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919088834, "dur":6570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919095465, "dur":65416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919160881, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919160939, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919160945, "dur":988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919161981, "dur":277180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919439162, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919439243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919439262, "dur":1777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919441088, "dur":80725, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919521814, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919521888, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919521898, "dur":1046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919522991, "dur":85429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919608421, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919608487, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919608496, "dur":1014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919609559, "dur":166854, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919776434, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919776445, "dur":1373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919777866, "dur":128509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919906384, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919906546, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919906557, "dur":1265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919907873, "dur":83607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919991481, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919991564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364919991583, "dur":1186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364919992819, "dur":113850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920106670, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920106749, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920106760, "dur":1033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920107840, "dur":26410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920134251, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920134350, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920134361, "dur":1369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920135787, "dur":38841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920174628, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920174693, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920174702, "dur":941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920175688, "dur":22089, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920197779, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920197916, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920197930, "dur":7816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920205819, "dur":137406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920343226, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920343371, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920343417, "dur":1298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920344767, "dur":131184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920475951, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920476014, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920476022, "dur":977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920477047, "dur":47756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920524803, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920524879, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920524889, "dur":11434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920536374, "dur":74952, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920611327, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920611413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920611423, "dur":5629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920617106, "dur":93339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920710446, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920710524, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920710534, "dur":1068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920711648, "dur":94227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920805876, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920805954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920805964, "dur":1075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920807087, "dur":58104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920865192, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920865435, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364920865451, "dur":2129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364920867636, "dur":274109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921141745, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921141804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921141811, "dur":16794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921158658, "dur":96100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921254759, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921254838, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921254848, "dur":1299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921256196, "dur":204789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921460985, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921461073, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921461083, "dur":1023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921462154, "dur":164342, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921626509, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921626520, "dur":1213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921627783, "dur":100619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921728413, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364921728424, "dur":1231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364921729705, "dur":1007274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364922736980, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364922737089, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364922737100, "dur":3471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364922740621, "dur":434308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364923174929, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364923175024, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364923175033, "dur":1001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696364923176079, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0.resS" }}
-,{ "pid":12345, "tid":3, "ts":1696364923176128, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364923176133, "dur":910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0.resS" }}
-,{ "pid":12345, "tid":3, "ts":1696364923177087, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":3, "ts":1696364923177138, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364923177144, "dur":1179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":3, "ts":1696364923178371, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/boot.config" }}
-,{ "pid":12345, "tid":3, "ts":1696364923178505, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364923178551, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696364923178557, "dur":885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/boot.config" }}
-,{ "pid":12345, "tid":3, "ts":1696364923179488, "dur":429656, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917669666, "dur":86, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917669752, "dur":6873, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917676638, "dur":181966, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":4, "ts":1696364917858604, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917858697, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917859010, "dur":1096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":4, "ts":1696364917860160, "dur":29366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1696364917889527, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917889668, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917889678, "dur":6776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1696364917896503, "dur":45829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1696364917942333, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917942418, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364917942430, "dur":2041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1696364917944541, "dur":1162995, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919107537, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919107639, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919107701, "dur":21807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919129560, "dur":47119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919176680, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919176758, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919176768, "dur":941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919177757, "dur":130103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919307861, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919307940, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919307949, "dur":1114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919309115, "dur":86852, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919395968, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919396050, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919396085, "dur":5161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919401331, "dur":27655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919428987, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919429099, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919429109, "dur":1695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919430876, "dur":124616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919555492, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919555569, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919555580, "dur":1051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919556679, "dur":137373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919694053, "dur":215, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919694279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919694289, "dur":1135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919695471, "dur":45807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919741279, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919741369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919741379, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919742598, "dur":50054, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919792654, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919792728, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919792738, "dur":1074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919793859, "dur":142177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919936037, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919936139, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919936150, "dur":1222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919937426, "dur":22265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919959692, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919959766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364919959776, "dur":1224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364919961049, "dur":60526, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920021576, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920021653, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920021664, "dur":1036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920022746, "dur":67665, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920090412, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920092520, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920092536, "dur":1823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920094408, "dur":22390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920116799, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920116882, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920116893, "dur":1046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920117989, "dur":87313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920205303, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920205375, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920205385, "dur":943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920206375, "dur":110848, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920317224, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920317319, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920317330, "dur":14836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920332229, "dur":64155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920396385, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920396480, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920396491, "dur":10460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920407002, "dur":67193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920474196, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920474269, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920474280, "dur":980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920475317, "dur":27402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920502720, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920502831, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920502842, "dur":1697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920504587, "dur":201780, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920706367, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920706494, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920706505, "dur":1149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920707703, "dur":129414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920837118, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920837217, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920837228, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920838466, "dur":66461, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920904928, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920904992, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920905008, "dur":1035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920906090, "dur":85528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920991627, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920991714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364920991724, "dur":1111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364920992883, "dur":110842, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921103726, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921103807, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921103818, "dur":1264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921105131, "dur":103991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921209122, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921209323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921209333, "dur":1160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921210545, "dur":101697, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921312243, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921312323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921312333, "dur":10786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921323170, "dur":130380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921453551, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921453661, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921453752, "dur":5245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921459050, "dur":160003, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921619065, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921619076, "dur":2452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921621580, "dur":180354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921801935, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921802043, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364921802054, "dur":1095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364921803196, "dur":219063, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364922022259, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364922022376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364922022386, "dur":182432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364922204876, "dur":564865, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364922769742, "dur":267, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364922770020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364922770029, "dur":1711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364922771791, "dur":190307, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Cinemachine.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364922962106, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364922962117, "dur":3615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Cinemachine.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364922965790, "dur":92111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364923057912, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923057923, "dur":1151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696364923059124, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1696364923059203, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923059253, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1696364923060375, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.resource" }}
-,{ "pid":12345, "tid":4, "ts":1696364923060425, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923060433, "dur":13504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.resource" }}
-,{ "pid":12345, "tid":4, "ts":1696364923073990, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923074039, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923074047, "dur":11586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923085686, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":4, "ts":1696364923085742, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923085751, "dur":6089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":4, "ts":1696364923091892, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":4, "ts":1696364923091943, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923091952, "dur":2786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":4, "ts":1696364923094790, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923094840, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923094849, "dur":1357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923096257, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1696364923096309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923096316, "dur":4358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1696364923100754, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":4, "ts":1696364923100873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923101023, "dur":1737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":4, "ts":1696364923102812, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923102866, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923102874, "dur":2434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923105360, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1696364923105419, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923105427, "dur":1140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1696364923106618, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1696364923106768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923106775, "dur":967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1696364923107793, "dur":63455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":4, "ts":1696364923171259, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923171270, "dur":1448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":4, "ts":1696364923172768, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level2.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923172817, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923172825, "dur":1031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level2.resS" }}
-,{ "pid":12345, "tid":4, "ts":1696364923173901, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level2" }}
-,{ "pid":12345, "tid":4, "ts":1696364923173947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923173953, "dur":1180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level2" }}
-,{ "pid":12345, "tid":4, "ts":1696364923175177, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1696364923175221, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923175226, "dur":891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1696364923176164, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1696364923176213, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923176218, "dur":958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1696364923177219, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1696364923177273, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696364923177279, "dur":1157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1696364923178484, "dur":430674, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696364923616328, "dur":2411, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1696364923917007, "dur": 1270, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1696364923915903, "dur": 2410, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1699292024784070, "dur":1721, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292024785797, "dur":149, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1699292024785978, "dur":28, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1699292024786007, "dur":587, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1699292024786632, "dur":949, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292024787581, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515639, "dur":131, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515770, "dur":27, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515797, "dur":9, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515806, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515822, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515826, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515833, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515836, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515845, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515866, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026515903, "dur":2031, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1699292024788144, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024788144, "dur":7929, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024796074, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1699292024796285, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024796394, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024798051, "dur":55505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1699292024853609, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1699292024853746, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024853851, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024854069, "dur":3393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1699292024857521, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1699292024857663, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024857711, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024857781, "dur":31067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1699292024888909, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1699292024889039, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024889084, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024889151, "dur":20379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1699292024909589, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1699292024909734, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024909816, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024909827, "dur":26460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1699292024936353, "dur":258, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292024936612, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024936669, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292024936751, "dur":457136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025393945, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025394026, "dur":154568, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025548607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025548619, "dur":1347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025550015, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025550067, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025550115, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025550123, "dur":1241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025551418, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025551514, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025551568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025551575, "dur":1241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025552894, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025552944, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025552999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025553006, "dur":1278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025554345, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025554396, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025554452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025554459, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025555592, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025555643, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025555698, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025555728, "dur":1167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025556947, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025556998, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025557044, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025557052, "dur":1579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025558683, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025558734, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025558785, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025558791, "dur":1131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025559976, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025560030, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025560131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025560138, "dur":995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025561179, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025561234, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025561282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025561288, "dur":1045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025562380, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025562428, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025562496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025562503, "dur":215673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025778231, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025778282, "dur":11206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025789499, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025789510, "dur":1723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025791289, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025791336, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025791437, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025791443, "dur":1725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025793212, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025793257, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025793317, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025793323, "dur":1333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025794703, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025794750, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025794796, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025794802, "dur":1875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025796725, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025796775, "dur":91210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025887996, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025888007, "dur":1131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025889189, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025889237, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025889435, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292025889442, "dur":1289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025890784, "dur":108949, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292025999733, "dur":335501, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026335246, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026335258, "dur":3650, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292026338956, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292026339005, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026339049, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026339061, "dur":2391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699292026341514, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1699292026341608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026341671, "dur":3448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1699292026345176, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699292026345234, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026345242, "dur":4403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699292026349697, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":1, "ts":1699292026350069, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026350078, "dur":907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":1, "ts":1699292026351030, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699292026351080, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026351087, "dur":15231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699292026366418, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699292026366512, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026366521, "dur":2168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699292026368736, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":1, "ts":1699292026368785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026368791, "dur":1210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":1, "ts":1699292026370050, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1699292026370101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026370107, "dur":2185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1699292026372343, "dur":10303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1699292026382646, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026382701, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699292026382708, "dur":843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1699292026383604, "dur":132016, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024787991, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024787992, "dur":8042, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024796055, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1699292024796059, "dur":258, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024796325, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1699292024796328, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024796412, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024797987, "dur":3098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1699292024801089, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1699292024801234, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024801282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024801529, "dur":34040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1699292024835636, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1699292024835792, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024835842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024835852, "dur":28529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1699292024864436, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1699292024864576, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024864631, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024864684, "dur":32839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1699292024897581, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1699292024897704, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024897749, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024897758, "dur":15766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1699292024913579, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1699292024913692, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024913738, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024913746, "dur":59521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1699292024973334, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1699292024973486, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024973565, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292024973574, "dur":736674, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1699292025710300, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025710351, "dur":67233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025777592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025777600, "dur":12748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025790399, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025790519, "dur":211, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025790759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025790767, "dur":1909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025792729, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025792775, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025792957, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025792963, "dur":1101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025794111, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025794165, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025794212, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025794218, "dur":1277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025795549, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025795606, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025795838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025795846, "dur":92279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025888198, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025888346, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025888407, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025888414, "dur":1528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025889988, "dur":80386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025970375, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025970470, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292025970510, "dur":1097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292025971658, "dur":244125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292026215783, "dur":119626, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026335416, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026335427, "dur":1498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292026336976, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292026337024, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026337071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026337077, "dur":1723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292026338851, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292026338899, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026338945, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026338951, "dur":7595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699292026346605, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026346660, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026346667, "dur":12034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026358774, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026359016, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026359030, "dur":3785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026362897, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1699292026362968, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026362980, "dur":5095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1699292026368125, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026368181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026368191, "dur":1382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026369620, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1699292026369672, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026369677, "dur":2610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1699292026372339, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1699292026372481, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026372529, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026372538, "dur":831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1699292026373414, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1699292026373463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026373469, "dur":833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1699292026374364, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1699292026374410, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026374415, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1699292026375539, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1699292026375588, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026375594, "dur":1216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1699292026376864, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1699292026376918, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026376947, "dur":957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1699292026377951, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1699292026378000, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026378005, "dur":1157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1699292026379205, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026379254, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026379260, "dur":1108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699292026380411, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1699292026380461, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026380467, "dur":889, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1699292026381402, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1699292026381537, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026381583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699292026381589, "dur":923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1699292026382558, "dur":133079, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024788189, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024788190, "dur":7881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024796072, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1699292024796277, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024796355, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024798203, "dur":44614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1699292024842867, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699292024842990, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024843035, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024843043, "dur":24134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699292024867235, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699292024867352, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024867397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024867406, "dur":32838, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699292024900298, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1699292024900425, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024900471, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024900479, "dur":26043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1699292024926589, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292024926735, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024926796, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024927052, "dur":17636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292024944746, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292024944872, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024944919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292024944926, "dur":742869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025687872, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025687926, "dur":89281, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025777220, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025777232, "dur":12331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025789615, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025789677, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025789769, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025789776, "dur":2289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025792118, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025792168, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025792225, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025792232, "dur":1419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025793702, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025793748, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025793898, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025793904, "dur":1065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025795033, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025795083, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025795131, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025795137, "dur":1122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025796312, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025796362, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025796408, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025796414, "dur":92169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025888631, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025888682, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025888728, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025888734, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025889812, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025889861, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025889940, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025889946, "dur":1050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025891046, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025891099, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025891146, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292025891152, "dur":882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025892081, "dur":107160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292025999242, "dur":335993, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292026335246, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292026335258, "dur":1641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292026336951, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292026336999, "dur":361, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292026337366, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292026337372, "dur":3644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292026341083, "dur":89598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292026430681, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292026430777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699292026430819, "dur":1082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699292026431947, "dur":83674, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024788079, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024788080, "dur":7989, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024796070, "dur":17714, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1699292024813785, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024813873, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024814162, "dur":39230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1699292024853456, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1699292024853585, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024853654, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024854138, "dur":25918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1699292024880113, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1699292024880253, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024880351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024880851, "dur":38275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1699292024919179, "dur":357, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1699292024919536, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024919607, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024919616, "dur":64010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1699292024983675, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame.exe" }}
+,{ "pid":12345, "tid":4, "ts":1699292024983726, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024983775, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024983781, "dur":1564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame.exe" }}
+,{ "pid":12345, "tid":4, "ts":1699292024985399, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1699292024985531, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024985586, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292024985868, "dur":138860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1699292025124828, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025124897, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025124965, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025125241, "dur":1232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025126525, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025126581, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025126628, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025126695, "dur":1011, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025127756, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025127811, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025127858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025127865, "dur":17270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025145193, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025145249, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025145301, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025145311, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025146613, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025146672, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025146721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025146729, "dur":1057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025147835, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025147895, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025147944, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025147952, "dur":1046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025149051, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025149109, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025149158, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025149166, "dur":1015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025150229, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025150281, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025150326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025150334, "dur":1014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025151401, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025151453, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025151527, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025151542, "dur":999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025152591, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025152642, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025152689, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025152696, "dur":1017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025153764, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025153815, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025153861, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025153869, "dur":1259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025155199, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025155265, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025155318, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025155326, "dur":1081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025156461, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025156526, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025156580, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025156590, "dur":1213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025157856, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025157905, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025157980, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025157988, "dur":1141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025159180, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025159232, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025159283, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025159291, "dur":1110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025160455, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025160509, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025160555, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025160562, "dur":7698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025168317, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025168375, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025168436, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025168444, "dur":1382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025169880, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025169932, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025169987, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025169995, "dur":1268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025171319, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025171372, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025171420, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025171458, "dur":1010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025172539, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025172586, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025172634, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025172641, "dur":1042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025173734, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025173785, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025173832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025173839, "dur":984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025174873, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025174920, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025174964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025174971, "dur":1685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025176713, "dur":139053, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025315767, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025315925, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025315936, "dur":1665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025317654, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025317705, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025317754, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025317761, "dur":231755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025549570, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025549625, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025549674, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025549681, "dur":985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025550715, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025550767, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025550814, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025550822, "dur":952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025551825, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025551872, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025551977, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025551984, "dur":1166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025553199, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025553251, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025553427, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025553434, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025554825, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025554873, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025554931, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025554937, "dur":961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025555947, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025556000, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025556211, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025556218, "dur":1039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025557310, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025557362, "dur":511, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025557881, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025557888, "dur":888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025558825, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025558872, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025558915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025558945, "dur":1246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025560243, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025560291, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025560360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025560367, "dur":917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025561332, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025561377, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025561421, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025561427, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025562513, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025562565, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025562704, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025562710, "dur":228089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025790855, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025790904, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025790995, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025791002, "dur":3670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025796304, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025796498, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025796742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025796749, "dur":92365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025889270, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025889331, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025889451, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025889457, "dur":1290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025890799, "dur":103755, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025994555, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025994647, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025994657, "dur":1421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025996130, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025996182, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025996233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025996241, "dur":2404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025998699, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292025998750, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025998800, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292025998809, "dur":337685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026336578, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026336634, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292026336682, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292026336712, "dur":1318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026338092, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026338152, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292026338272, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292026338281, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026339590, "dur":174578, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026514169, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292026514261, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699292026514271, "dur":1279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699292026515603, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1699292026515605, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699292026520939, "dur":2651, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1699292026541099, "dur": 963, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1699292026536394, "dur": 5708, "ph": "X", "name": "Write chrome-trace events", "args": {} },
