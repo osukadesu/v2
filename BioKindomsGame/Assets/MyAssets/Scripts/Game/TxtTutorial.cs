@@ -5,7 +5,7 @@ public class TxtTutorial : MonoBehaviour
 {
     [SerializeField] Text txtTutorial;
     public Animator txtAnim;
-    private void Start()
+    void Start()
     {
         if (MenuController.menuController.IsNewGame)
         {

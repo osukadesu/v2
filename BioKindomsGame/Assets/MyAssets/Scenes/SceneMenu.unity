@@ -7024,6 +7024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnLoadGame: {fileID: 0}
+  menuController: {fileID: 0}
   verticalLayoutGroup: {fileID: 0}
 --- !u!4 &1986926668
 Transform:

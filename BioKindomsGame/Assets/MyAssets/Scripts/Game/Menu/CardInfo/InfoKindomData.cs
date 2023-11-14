@@ -6,8 +6,7 @@ public class InfoKindomData : ScriptableObject
     [SerializeField] string text2 = "";
     [SerializeField] string textInfo = "";
     [SerializeField]
-    GameObject
-    animal1, animal2, animal3, animal4, animal5,
+    GameObject animal1, animal2, animal3, animal4, animal5,
     vegetal1, vegetal2, vegetal3, vegetal4, vegetal5,
     fungi1, fungi2, fungi3, fungi4, fungi5,
     protista1, protista2, protista3, protista4, protista5,

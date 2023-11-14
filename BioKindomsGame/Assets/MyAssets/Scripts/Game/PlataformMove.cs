@@ -10,7 +10,7 @@ public class PlataformMove : MonoBehaviour
     {
         MovePlataform();
     }
-    private void MovePlataform()
+    void MovePlataform()
     {
         if (Vector3.Distance(transform.position, wayPoints[wayPointsIndex].transform.position) < .1f)
         {
@@ -22,14 +22,14 @@ public class PlataformMove : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, wayPoints[wayPointsIndex].transform.position, plataformSpeed * Time.deltaTime);
     }
-    private void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.transform.SetParent(transform);
         }
     }
-    private void OnCollisionExit(Collision other)
+    void OnCollisionExit(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {

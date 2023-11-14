@@ -1,4 +1,3 @@
-using UnityEngine;
 public class InventoryUI : InventoryUITemplate
 {
     protected internal override void DrawInventory()

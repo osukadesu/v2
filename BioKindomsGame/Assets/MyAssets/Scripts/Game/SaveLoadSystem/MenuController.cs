@@ -13,7 +13,7 @@ public class MenuController : MonoBehaviour
         isNewGame = false;
         isLoadGame = false;
     }
-    private void Singleton()
+    void Singleton()
     {
         if (menuController == null)
         {

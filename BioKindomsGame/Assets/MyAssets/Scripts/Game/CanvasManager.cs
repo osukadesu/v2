@@ -1,7 +1,4 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 public class CanvasManager : MonoBehaviour
 {
     [SerializeField] ViewMenu _viewMenu;
@@ -95,7 +92,7 @@ public class CanvasManager : MonoBehaviour
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        //_craftAnimal2.ButtonBuild();
+        _craftBuilderSystem.ButtonBuildAnimal2();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal3()

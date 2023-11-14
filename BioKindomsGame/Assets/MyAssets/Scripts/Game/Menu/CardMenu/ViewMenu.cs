@@ -45,5 +45,6 @@ public class ViewMenu : MonoBehaviour
     public void CloseTabView()
     {
         animTabView.SetBool("tabview", false);
+        messageText.color = new Color(1, 1, 1, 1);
     }
 }

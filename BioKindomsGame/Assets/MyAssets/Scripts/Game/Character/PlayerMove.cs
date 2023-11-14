@@ -1,8 +1,6 @@
 using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
-
-
     [SerializeField] float horizontalMove, verticalMove, playerSpeed = 3.5f, rotationSpeed = .25f, jumpValue = 4f;
     [SerializeField] Rigidbody playerRB;
     [SerializeField] Animator myAnim;

@@ -11,7 +11,7 @@ public class TimerPresentation : MonoBehaviour
     {
         MyTimer();
     }
-    public void MyTimer()
+    void MyTimer()
     {
         myTimer += 1f * Time.deltaTime;
         if (myTimer >= 4.2f)

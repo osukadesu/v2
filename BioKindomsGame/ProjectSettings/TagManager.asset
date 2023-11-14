@@ -20,6 +20,10 @@ TagManager:
   - btnClose
   - object3D
   - objectMovin
+  - btnExit
+  - btnOptions
+  - btnNewGame
+  - targetPlayer
   layers:
   - Default
   - TransparentFX

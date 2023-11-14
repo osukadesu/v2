@@ -11,20 +11,7 @@ public class InventorySystem : MonoBehaviour
     {
         inventoryItems = new List<InventoryItem>();
         _itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
-        //Singleton();
         instance = this;
-    }
-    private void Singleton()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
     public void Add(InventoryItemData referenceData)
     {

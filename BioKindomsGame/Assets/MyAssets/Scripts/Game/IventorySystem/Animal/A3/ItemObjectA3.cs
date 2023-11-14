@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 public class ItemObjectA3 : ItemObjectTemplate
 {
     protected internal override void OnHandlePickUp()
@@ -8,12 +7,15 @@ public class ItemObjectA3 : ItemObjectTemplate
         messageText.text = referenceItem.itemName + " Guardado!";
         InventorySystemA3.instance3.Add(referenceItem);
         referenceItem.itemIsCheck = true;
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
     protected internal override void OnHandlePickUpLoad()
     {
+        txtAnim.SetBool("txtinfogral", false);
+        messageText.text = "";
+        DisableCollider();
         InventorySystemA3.instance3.Add(referenceItem);
         referenceItem.itemIsCheck = true;
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

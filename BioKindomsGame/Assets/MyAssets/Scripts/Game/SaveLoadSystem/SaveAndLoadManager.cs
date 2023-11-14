@@ -3,9 +3,9 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveAndLoadManager
 {
-    public static void SaveDataGame(CraftBuilderSystem craftBuilderSystem, PlayerMove playerMove)
+    public static void SaveDataGame(CraftBuilderSystem craftBuilderSystem, PlayerMove playerMove, LevelSystem levelSystem)
     {
-        PlayerData playerData = new(craftBuilderSystem, playerMove);
+        PlayerData playerData = new(craftBuilderSystem, playerMove, levelSystem);
         string datapath = Application.persistentDataPath + "/player.data";
         FileStream fileStream = new(datapath, FileMode.Create);
         BinaryFormatter binaryFormatter = new();

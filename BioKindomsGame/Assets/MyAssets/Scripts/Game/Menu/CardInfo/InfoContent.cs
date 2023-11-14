@@ -11,8 +11,7 @@ public class InfoContent : MonoBehaviour
     [SerializeField] Text text2;
     [SerializeField] Text textInfo;
     [SerializeField] CanvasManager _canvasManager;
-    [SerializeField]
-    Button btnBackInfo, btnInfoAnimal1, btnInfoAnimal2, btnInfoAnimal3, btnInfoAnimal4, btnInfoAnimal5;
+    [SerializeField] Button btnBackInfo, btnInfoAnimal1, btnInfoAnimal2, btnInfoAnimal3, btnInfoAnimal4, btnInfoAnimal5;
     /*
     Button btnBackInfo, btnInfoAnimal1, btnInfoAnimal2, btnInfoAnimal3, btnInfoAnimal4, btnInfoAnimal5,
     btnInfoVegetal1, btnInfoVegetal2, btnInfoVegetal3, btnInfoVegetal4, btnInfoVegetal5,
@@ -53,38 +52,38 @@ public class InfoContent : MonoBehaviour
         {
             case 1:
                 Show();
-                textName.text = infoKindomData.TextName = "Animal1";
+                textName.text = infoKindomData.TextName = "Carpa Asiática Dorada";
                 text2.text = infoKindomData.Text2 = "Vista 3D";
-                textInfo.text = infoKindomData.TextInfo = "Info";
+                textInfo.text = infoKindomData.TextInfo = "La carpa asiática dorada es como una celebridad entre los peces, con colores súper brillantes. Les encanta nadar en estanques y lucirse. Aunque son originarias de Asia, a veces las llevamos a otros lugares para que más personas las conozcan.";
                 objec3D = Instantiate(infoKindomData.Animal1, transform3D);
                 break;
             case 2:
                 Show();
-                textName.text = infoKindomData.TextName = "Animal2";
+                textName.text = infoKindomData.TextName = "Chipichipi";
                 text2.text = infoKindomData.Text2 = "Vista 3D";
-                textInfo.text = infoKindomData.TextInfo = "Info";
+                textInfo.text = infoKindomData.TextInfo = "El chipichipi es un molusco pequeñito que vive en el mar, es como el tesoro escondido de la arena. Estos diminutos amigos tienen conchas lindas y pueden enterrarse en la playa. Si alguna vez estás construyendo castillos de arena puede que encuentres uno.";
                 objec3D = Instantiate(infoKindomData.Animal2, transform3D);
                 break;
             case 3:
                 Show();
-                textName.text = infoKindomData.TextName = "Animal3";
+                textName.text = infoKindomData.TextName = "Mariposa Monarca";
                 text2.text = infoKindomData.Text2 = "Vista 3D";
-                textInfo.text = infoKindomData.TextInfo = "Info";
+                textInfo.text = infoKindomData.TextInfo = "La mariposa monarca es como la reina de las mariposas cada año viajan muy lejos cruzando paises, Son como pequeñas exploradoras con alas mágicas. Además, es famosa por sus colores naranjas y negros. ¡Una verdadera belleza voladora";
                 objec3D = Instantiate(infoKindomData.Animal3, transform3D);
                 break;
             case 4:
                 Show();
-                textName.text = infoKindomData.TextName = "Animal4";
+                textName.text = infoKindomData.TextName = "Iguana Verde";
                 text2.text = infoKindomData.Text2 = "Vista 3D";
-                textInfo.text = infoKindomData.TextInfo = "Info";
-                //objec3D = infoKindomData.Animal4;
+                textInfo.text = infoKindomData.TextInfo = "La iguana verde es como el dinosaurio pequeño de los días modernos. Vive en lugares cálidos, es buena escaladora de árboles, se broncea todo el día y tiene una cola larga. Con su piel verde, es como una supermodelo de la selva.";
+                objec3D = Instantiate(infoKindomData.Animal4, transform3D);
                 break;
             case 5:
                 Show();
-                textName.text = infoKindomData.TextName = "Animal5";
+                textName.text = infoKindomData.TextName = "Colibrí de Mulsant";
                 text2.text = infoKindomData.Text2 = "Vista 3D";
-                textInfo.text = infoKindomData.TextInfo = "Info";
-                //objec3D = infoKindomData.Animal5;
+                textInfo.text = infoKindomData.TextInfo = "El colibrí de Mulsant es un ave diminuto y brillante. Como un pequeño arco iris con alas, le encanta chupar néctar de las flores. A menudo se encuentran en zonas montañosas de América del Sur y América Central. ¡Es como una bailarina mágica del aire!";
+                objec3D = Instantiate(infoKindomData.Animal5, transform3D);
                 break;
             case 6:
                 Show();

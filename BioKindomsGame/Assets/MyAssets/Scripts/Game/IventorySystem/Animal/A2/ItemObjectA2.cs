@@ -1,3 +1,4 @@
+using UnityEngine;
 public class ItemObjectA2 : ItemObjectTemplate
 {
     protected internal override void OnHandlePickUp()
@@ -6,14 +7,15 @@ public class ItemObjectA2 : ItemObjectTemplate
         messageText.text = referenceItem.itemName + " Guardado!";
         InventorySystemA2.instance2.Add(referenceItem);
         referenceItem.itemIsCheck = true;
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
     protected internal override void OnHandlePickUpLoad()
     {
-        InventorySystemA2.instance2.Add(referenceItem); 
         txtAnim.SetBool("txtinfogral", false);
         messageText.text = "";
+        DisableCollider();
+        InventorySystemA2.instance2.Add(referenceItem);
         referenceItem.itemIsCheck = true;
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

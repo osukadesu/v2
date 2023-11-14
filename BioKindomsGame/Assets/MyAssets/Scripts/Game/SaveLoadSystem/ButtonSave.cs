@@ -5,6 +5,7 @@ public class ButtonSave : MonoBehaviour
 {
     [SerializeField] Button buttonSave;
     [SerializeField] CraftBuilderSystem craftBuilderSystem;
+    [SerializeField] LevelSystem levelSystem;
     [SerializeField] PlayerMove playerMove;
     [SerializeField] Animator txtAnim;
     [SerializeField] Text messageText;
@@ -15,6 +16,7 @@ public class ButtonSave : MonoBehaviour
         messageText = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Text>();
         buttonSave = GameObject.FindGameObjectWithTag("btnSave").GetComponent<Button>();
         craftBuilderSystem = FindObjectOfType<CraftBuilderSystem>();
+        levelSystem = FindObjectOfType<LevelSystem>();
         buttonSave.onClick.AddListener(() => MyButtonSave());
     }
     void Start()
@@ -23,16 +25,16 @@ public class ButtonSave : MonoBehaviour
     }
     public void MyButtonSave()
     {
-        SaveAndLoadManager.SaveDataGame(craftBuilderSystem, playerMove);
         StartCoroutine(TextFade());
+        SaveAndLoadManager.SaveDataGame(craftBuilderSystem, playerMove, levelSystem);
     }
-    private void TextHide()
+    void TextHide()
     {
         txtAnim.SetBool("txtinfogral", false);
         messageText.text = "";
     }
 
-    private void TextView()
+    void TextView()
     {
         txtAnim.SetBool("txtinfogral", true);
         messageText.text = "Partida Guardada!";

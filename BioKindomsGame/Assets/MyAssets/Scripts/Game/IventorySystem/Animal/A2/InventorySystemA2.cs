@@ -7,28 +7,11 @@ public class InventorySystemA2 : MonoBehaviour
     public event onInventoryChangedEvent OnInventoryChangedEventCallBack;
     public Dictionary<InventoryItemData, InventoryItem> _itemDictionary;
     public List<InventoryItem> inventoryItems;
-    [SerializeField] InventoryUIA2 inventoryUIA2;
-    void Start()
-    {
-        instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventory;
-    }
-    private void Awake()
+    void Awake()
     {
         inventoryItems = new List<InventoryItem>();
         _itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
-        Singleton();
-    }
-   private void Singleton()
-    {
-        if (instance2 != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance2 = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        instance2 = this;
     }
     public void Add(InventoryItemData referenceData)
     {
@@ -39,7 +22,7 @@ public class InventorySystemA2 : MonoBehaviour
         }
         else
         {
-            InventoryItem newItem = new InventoryItem(referenceData);
+            InventoryItem newItem = new(referenceData);
             inventoryItems.Add(newItem);
             _itemDictionary.Add(referenceData, newItem);
             OnInventoryChangedEventCallBack.Invoke();

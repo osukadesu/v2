@@ -19,7 +19,7 @@ public class InventorySystemA3 : MonoBehaviour
         _itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
         Singleton();
     }
-   private void Singleton()
+    private void Singleton()
     {
         if (instance3 != null)
         {

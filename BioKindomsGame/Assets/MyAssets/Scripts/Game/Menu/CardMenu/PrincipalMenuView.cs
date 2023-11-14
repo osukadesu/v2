@@ -4,6 +4,11 @@ using UnityEngine.SceneManagement;
 public class PrincipalMenuView : MonoBehaviour
 {
     [SerializeField] CanvasManager _canvasManager;
+    [SerializeField] MenuController menuController;
+    void Awake()
+    {
+        menuController = FindObjectOfType<MenuController>();
+    }
     void Update()
     {
         _canvasManager.PrincipalMenuViewMethod();
@@ -16,13 +21,13 @@ public class PrincipalMenuView : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            MethodPM();
+            MethodPrincipalMenu();
         }
     }
-    public void MethodPM()
+    public void MethodPrincipalMenu()
     {
-        MenuController.menuController.IsNewGame = false;
-        MenuController.menuController.IsLoadGame = false;
+        menuController.IsNewGame = false;
+        menuController.IsLoadGame = false;
         SceneManager.LoadScene(1);
     }
 }

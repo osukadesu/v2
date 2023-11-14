@@ -3,23 +3,24 @@ public class LoadController : MonoBehaviour
 {
     [SerializeField] LoadGame loadGame;
     [SerializeField] MenuController menuController;
-    [SerializeField] int valueLevel;
-    public int ValueLevel { get { return valueLevel; } }
+    [SerializeField] bool levelLoad;
+    public bool LevelLoad { get { return levelLoad; } set { levelLoad = value; } }
     void Awake()
     {
         loadGame = FindObjectOfType<LoadGame>();
         menuController = FindObjectOfType<MenuController>();
         LoadControllerMethod();
     }
-    private void LoadControllerMethod()
+    void LoadControllerMethod()
     {
         if (menuController.IsNewGame)
         {
-            valueLevel = 1;
+            levelLoad = false;
             loadGame.GoNewGame();
         }
         if (menuController.IsLoadGame)
         {
+            levelLoad = true;
             loadGame.GoLoadGame();
         }
     }
