@@ -7,9 +7,10 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] InfoContent _infoContent;
     [SerializeField] CraftBuilderSystem _craftBuilderSystem;
     [SerializeField] PrincipalMenuView _principalMenuView;
-    [SerializeField] int menuCode, infoCodes, craftinCode, buildCode;
+    [SerializeField] int menuCode, infoCodes, craftinCode, buildCode, textInfoCode;
     public int MenuCode { get { return menuCode; } set { menuCode = value; } }
     public int InfoCode { get { return infoCodes; } set { infoCodes = value; } }
+    public int TextInfoCode { get { return textInfoCode; } set { textInfoCode = value; } }
     public int CraftinCode { get { return craftinCode; } set { craftinCode = value; } }
     public int BuildCode { get { return buildCode; } set { buildCode = value; } }
     void Awake()
@@ -21,6 +22,17 @@ public class CanvasManager : MonoBehaviour
         _craftBuilderSystem.Configure(this);
         _principalMenuView.Configure(this);
         ClosingAll();
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (Time.timeScale == 1.0F)
+                Time.timeScale = 0F;
+            else
+                Time.timeScale = 1.0F;
+            Time.fixedDeltaTime = 0.02F * Time.timeScale;
+        }
     }
     public void ButtonGoAnimalV2()
     {
@@ -99,14 +111,14 @@ public class CanvasManager : MonoBehaviour
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        // _craftAnimal3.ButtonBuild();
+        _craftBuilderSystem.ButtonBuildAnimal3();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal4()
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        //_craftAnimal4.ButtonBuild();
+        _craftBuilderSystem.ButtonBuildAnimal4();
         ButtonGoAnimalV2();
     }
     public void CraftAnimal5()
@@ -126,6 +138,16 @@ public class CanvasManager : MonoBehaviour
         _infoContent.SetInfo();
         menuCode = 1;
         _cardMenu.SetContent();
+    }
+    public void InfoText1()
+    {
+        textInfoCode = 1;
+        _infoContent.SetTextInfo();
+    }
+    public void InfoText2()
+    {
+        textInfoCode = 2;
+        _infoContent.SetTextInfo();
     }
     public void TabViewMenu()
     {
@@ -192,6 +214,7 @@ public class CanvasManager : MonoBehaviour
         _cardMenu.SetContent();
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
+        InfoText1();
 
     }
     public void InfoAnimal2()
@@ -202,6 +225,7 @@ public class CanvasManager : MonoBehaviour
         _cardMenu.SetContent();
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
+        InfoText1();
     }
     public void InfoAnimal3()
     {
@@ -211,6 +235,7 @@ public class CanvasManager : MonoBehaviour
         _cardMenu.SetContent();
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
+        InfoText1();
     }
     public void InfoAnimal4()
     {
@@ -220,6 +245,7 @@ public class CanvasManager : MonoBehaviour
         _cardMenu.SetContent();
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
+        InfoText1();
     }
     public void InfoAnimal5()
     {
@@ -229,6 +255,7 @@ public class CanvasManager : MonoBehaviour
         _cardMenu.SetContent();
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
+        InfoText1();
     }
     public void ViewVegetal1()
     {

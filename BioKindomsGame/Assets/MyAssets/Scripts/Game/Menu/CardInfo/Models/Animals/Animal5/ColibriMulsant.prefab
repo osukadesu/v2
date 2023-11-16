@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2238635261727713340}
   - component: {fileID: 2936031936813901721}
   - component: {fileID: 1106221072290566995}
+  - component: {fileID: -7000008387073647249}
+  - component: {fileID: -3601808875004497050}
   m_Layer: 0
   m_Name: ColibriMulsant
   m_TagString: Untagged
@@ -83,3 +85,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-7000008387073647249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466742208559444614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11603923, y: 0.08572531, z: 0.039077558}
+  m_Center: {x: -0.0000003126339, y: -0.009656059, z: -0.0000221904}
+--- !u!114 &-3601808875004497050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466742208559444614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bded862b70e66da4ea3689ff298cadbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 300

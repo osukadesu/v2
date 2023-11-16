@@ -8,6 +8,7 @@ public class LevelSystem : MonoBehaviour
     [SerializeField] LoadGame loadGame;
     [SerializeField] GameObject[] Levels;
     [SerializeField] PlayerMove playerMove;
+    string myMessage;
     void Awake()
     {
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
@@ -39,6 +40,7 @@ public class LevelSystem : MonoBehaviour
     {
         currentLevel++;
         ProcesarNivel(currentLevel);
+        playerMove.transform.position = targetPlayerPosition.position;
     }
     public void ProcesarNivel(int level)
     {
@@ -47,25 +49,46 @@ public class LevelSystem : MonoBehaviour
             case 1:
                 Levels[0].SetActive(true);
                 Levels[1].SetActive(false);
+                Levels[2].SetActive(false);
+                Levels[3].SetActive(false);
                 Debug.Log("Bienvenido al Nivel 1");
                 break;
             case 2:
                 Levels[0].SetActive(false);
                 Levels[1].SetActive(true);
-                if (loadController.LevelLoad)
-                {
-                    PlayerData playerData = SaveAndLoadManager.LoadDataGame();
-                    loadGame.SetPlayerPosition(playerData);
-                }
-                else
-                {
-                    playerMove.transform.position = targetPlayerPosition.position;
-                    Debug.Log("Bienvenido al Nivel 2");
-                }
+                Levels[2].SetActive(false);
+                Levels[3].SetActive(false);
+                myMessage = "Bienvenido al Nivel 2";
+                LevelCondition(myMessage);
+                break;
+            case 3:
+                Levels[0].SetActive(false);
+                Levels[1].SetActive(false);
+                Levels[2].SetActive(true);
+                Levels[3].SetActive(false);
+                myMessage = "Bienvenido al Nivel 3";
+                LevelCondition(myMessage);
+                break;
+            case 4:
+                Levels[0].SetActive(false);
+                Levels[1].SetActive(false);
+                Levels[2].SetActive(false);
+                Levels[3].SetActive(true);
+                myMessage = "Bienvenido al Nivel 4";
+                LevelCondition(myMessage);
                 break;
             default:
                 Debug.LogError("Error al cargar nivel");
                 break;
+        }
+    }
+    private void LevelCondition(string message)
+    {
+        if (loadController.LevelLoad)
+        {
+            PlayerData playerData = SaveAndLoadManager.LoadDataGame();
+            loadGame.SetPlayerPosition(playerData);
+            Debug.Log(message);
         }
     }
 }

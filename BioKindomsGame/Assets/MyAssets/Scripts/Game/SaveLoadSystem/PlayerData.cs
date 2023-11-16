@@ -1,24 +1,26 @@
-using UnityEngine;
-
 [System.Serializable]
 public class PlayerData
 {
     public float[] position = new float[3];
     public bool animal11, animal12, animal13, animal14, animal15, isCreatedA1,
-    animal21, animal22, animal23, animal24, animal25, isCreatedA2;
+    animal21, animal22, animal23, animal24, animal25, isCreatedA2,
+    animal31, animal32, animal33, animal34, animal35, isCreatedA3,
+    animal41, animal42, animal43, animal44, animal45, isCreatedA4;
     public int currentLevelData;
     public PlayerData(CraftBuilderSystem craftBuilderSystem, PlayerMove playerMove, LevelSystem levelSystem)
     {
         position[0] = playerMove.transform.position.x;
         position[1] = playerMove.transform.position.y;
         position[2] = playerMove.transform.position.z;
-        MappingAnimals(craftBuilderSystem); 
+        MappingAnimals(craftBuilderSystem);
         currentLevelData = levelSystem.CurrentLevel;
     }
     void MappingAnimals(CraftBuilderSystem craftBuilderSystem)
     {
         MappinAnimal1(craftBuilderSystem);
         MappinAnimal2(craftBuilderSystem);
+        MappinAnimal3(craftBuilderSystem);
+        MappinAnimal4(craftBuilderSystem);
     }
 
     void MappinAnimal1(CraftBuilderSystem craftBuilderSystem)
@@ -38,5 +40,23 @@ public class PlayerData
         animal24 = craftBuilderSystem._InventoryItemDatas[8].itemIsCheck;
         animal25 = craftBuilderSystem._InventoryItemDatas[9].itemIsCheck;
         isCreatedA2 = craftBuilderSystem.IsCreated[1];
+    }
+    void MappinAnimal3(CraftBuilderSystem craftBuilderSystem)
+    {
+        animal31 = craftBuilderSystem._InventoryItemDatas[10].itemIsCheck;
+        animal32 = craftBuilderSystem._InventoryItemDatas[11].itemIsCheck;
+        animal33 = craftBuilderSystem._InventoryItemDatas[12].itemIsCheck;
+        animal34 = craftBuilderSystem._InventoryItemDatas[13].itemIsCheck;
+        animal35 = craftBuilderSystem._InventoryItemDatas[14].itemIsCheck;
+        isCreatedA3 = craftBuilderSystem.IsCreated[2];
+    }
+    void MappinAnimal4(CraftBuilderSystem craftBuilderSystem)
+    {
+        animal41 = craftBuilderSystem._InventoryItemDatas[15].itemIsCheck;
+        animal42 = craftBuilderSystem._InventoryItemDatas[16].itemIsCheck;
+        animal43 = craftBuilderSystem._InventoryItemDatas[17].itemIsCheck;
+        animal44 = craftBuilderSystem._InventoryItemDatas[18].itemIsCheck;
+        animal45 = craftBuilderSystem._InventoryItemDatas[19].itemIsCheck;
+        isCreatedA4 = craftBuilderSystem.IsCreated[3];
     }
 }

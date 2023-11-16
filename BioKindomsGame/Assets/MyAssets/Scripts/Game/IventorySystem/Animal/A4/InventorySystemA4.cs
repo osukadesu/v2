@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class InventorySystemA4 : MonoBehaviour
@@ -8,28 +7,11 @@ public class InventorySystemA4 : MonoBehaviour
     public event onInventoryChangedEvent OnInventoryChangedEventCallBack;
     public Dictionary<InventoryItemData, InventoryItem> _itemDictionary;
     public List<InventoryItem> inventoryItems;
-    [SerializeField] InventoryUIA4 inventoryUIA4;
-    void Start()
-    {
-        instance4.OnInventoryChangedEventCallBack += inventoryUIA4.OnUpdateInventory;
-    }
-    private void Awake()
+    void Awake()
     {
         inventoryItems = new List<InventoryItem>();
         _itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
-        Singleton();
-    }
-   private void Singleton()
-    {
-        if (instance4 != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance4 = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        instance4 = this;
     }
     public void Add(InventoryItemData referenceData)
     {
@@ -40,7 +22,7 @@ public class InventorySystemA4 : MonoBehaviour
         }
         else
         {
-            InventoryItem newItem = new InventoryItem(referenceData);
+            InventoryItem newItem = new(referenceData);
             inventoryItems.Add(newItem);
             _itemDictionary.Add(referenceData, newItem);
             OnInventoryChangedEventCallBack.Invoke();

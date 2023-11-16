@@ -1,4 +1,3 @@
-using UnityEngine;
 public class ItemObjectA4 : ItemObjectTemplate
 {
     protected internal override void OnHandlePickUp()

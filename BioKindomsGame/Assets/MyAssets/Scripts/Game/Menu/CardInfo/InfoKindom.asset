@@ -18,8 +18,8 @@ MonoBehaviour:
   animal1: {fileID: 2759885286018085369, guid: d736a7ada97799e4889406dd357d40ee, type: 3}
   animal2: {fileID: 6452572007693341910, guid: fd8495cbdc8948840be98653a71db924, type: 3}
   animal3: {fileID: 6136178312442412578, guid: 756c5b65e865ab240b6425f89f68a1da, type: 3}
-  animal4: {fileID: 0}
-  animal5: {fileID: 0}
+  animal4: {fileID: 76506382196101323, guid: b63dd4ca8a9b3f240ae161c5fca116bc, type: 3}
+  animal5: {fileID: 1466742208559444614, guid: eb6b0ea53ee74354db6dd60ba6dfb824, type: 3}
   vegetal1: {fileID: 0}
   vegetal2: {fileID: 0}
   vegetal3: {fileID: 0}

@@ -2,18 +2,20 @@ using UnityEngine;
 public class LoadGame : MonoBehaviour
 {
     [SerializeField] CraftBuilderSystem craftBuilderSystem;
-    [SerializeField] LevelSystem levelSystem;
     [SerializeField] PlayerMove playerMove;
     [SerializeField] ItemObject IOA1P1, IOA1P2, IOA1P3, IOA1P4, IOA1P5;
     [SerializeField] ItemObjectA2 IOA2P1, IOA2P2, IOA2P3, IOA2P4, IOA2P5;
+    [SerializeField] ItemObjectA3 IOA3P1, IOA3P2, IOA3P3, IOA3P4, IOA3P5;
+    [SerializeField] ItemObjectA4 IOA4P1, IOA4P2, IOA4P3, IOA4P4, IOA4P5;
     [SerializeField] InventoryUI inventoryUI;
     [SerializeField] InventoryUIA2 inventoryUIA2;
+    [SerializeField] InventoryUIA3 inventoryUIA3;
+    [SerializeField] InventoryUIA4 inventoryUIA4;
     [SerializeField] float timerLoad;
     void Awake()
     {
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
         craftBuilderSystem = FindObjectOfType<CraftBuilderSystem>();
-        levelSystem = FindObjectOfType<LevelSystem>();
         timerLoad = 1.0f;
     }
     void Update()
@@ -26,6 +28,8 @@ public class LoadGame : MonoBehaviour
         {
             InventorySystem.instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
             InventorySystemA2.instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventory;
+            InventorySystemA3.instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventory;
+            InventorySystemA4.instance4.OnInventoryChangedEventCallBack += inventoryUIA4.OnUpdateInventory;
             PlayerData playerData = SaveAndLoadManager.LoadDataGame();
             SetPlayerPosition(playerData);
             MappingAnimals(playerData);
@@ -39,6 +43,8 @@ public class LoadGame : MonoBehaviour
         {
             InventorySystem.instance.OnInventoryChangedEventCallBack += inventoryUI.OnUpdateInventory;
             InventorySystemA2.instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventory;
+            InventorySystemA3.instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventory;
+            InventorySystemA4.instance4.OnInventoryChangedEventCallBack += inventoryUIA4.OnUpdateInventory;
             timerLoad = 0;
         }
     }
@@ -53,6 +59,8 @@ public class LoadGame : MonoBehaviour
     {
         MappinAnimal1(playerData);
         MappinAnimal2(playerData);
+        MappinAnimal3(playerData);
+        MappinAnimal4(playerData);
     }
     void MappinAnimal1(PlayerData playerData)
     {
@@ -72,10 +80,30 @@ public class LoadGame : MonoBehaviour
         craftBuilderSystem._InventoryItemDatas[9].itemIsCheck = playerData.animal25;
         craftBuilderSystem.IsCreated[1] = playerData.isCreatedA2;
     }
+    void MappinAnimal3(PlayerData playerData)
+    {
+        craftBuilderSystem._InventoryItemDatas[10].itemIsCheck = playerData.animal31;
+        craftBuilderSystem._InventoryItemDatas[11].itemIsCheck = playerData.animal32;
+        craftBuilderSystem._InventoryItemDatas[12].itemIsCheck = playerData.animal33;
+        craftBuilderSystem._InventoryItemDatas[13].itemIsCheck = playerData.animal34;
+        craftBuilderSystem._InventoryItemDatas[14].itemIsCheck = playerData.animal35;
+        craftBuilderSystem.IsCreated[2] = playerData.isCreatedA3;
+    }
+    void MappinAnimal4(PlayerData playerData)
+    {
+        craftBuilderSystem._InventoryItemDatas[15].itemIsCheck = playerData.animal31;
+        craftBuilderSystem._InventoryItemDatas[16].itemIsCheck = playerData.animal32;
+        craftBuilderSystem._InventoryItemDatas[17].itemIsCheck = playerData.animal33;
+        craftBuilderSystem._InventoryItemDatas[18].itemIsCheck = playerData.animal34;
+        craftBuilderSystem._InventoryItemDatas[19].itemIsCheck = playerData.animal35;
+        craftBuilderSystem.IsCreated[3] = playerData.isCreatedA4;
+    }
     void CheckingAnimals(PlayerData playerData)
     {
         CheckingDataAnimal1(playerData);
         CheckingDataAnimal2(playerData);
+        CheckingDataAnimal3(playerData);
+        CheckingDataAnimal4(playerData);
     }
     void CheckingDataAnimal1(PlayerData playerData)
     {
@@ -129,6 +157,60 @@ public class LoadGame : MonoBehaviour
         if (playerData.isCreatedA2)
         {
             craftBuilderSystem.ButtonBuildAnimal2();
+        }
+    }
+    void CheckingDataAnimal3(PlayerData playerData)
+    {
+        if (playerData.animal31)
+        {
+            IOA3P1.OnHandlePickUpLoad();
+        }
+        if (playerData.animal32)
+        {
+            IOA3P2.OnHandlePickUpLoad();
+        }
+        if (playerData.animal33)
+        {
+            IOA3P3.OnHandlePickUpLoad();
+        }
+        if (playerData.animal34)
+        {
+            IOA3P4.OnHandlePickUpLoad();
+        }
+        if (playerData.animal35)
+        {
+            IOA3P5.OnHandlePickUpLoad();
+        }
+        if (playerData.isCreatedA3)
+        {
+            craftBuilderSystem.ButtonBuildAnimal3();
+        }
+    }
+    void CheckingDataAnimal4(PlayerData playerData)
+    {
+        if (playerData.animal41)
+        {
+            IOA4P1.OnHandlePickUpLoad();
+        }
+        if (playerData.animal42)
+        {
+            IOA4P2.OnHandlePickUpLoad();
+        }
+        if (playerData.animal43)
+        {
+            IOA4P3.OnHandlePickUpLoad();
+        }
+        if (playerData.animal44)
+        {
+            IOA4P4.OnHandlePickUpLoad();
+        }
+        if (playerData.animal45)
+        {
+            IOA4P5.OnHandlePickUpLoad();
+        }
+        if (playerData.isCreatedA4)
+        {
+            craftBuilderSystem.ButtonBuildAnimal4();
         }
     }
 }
