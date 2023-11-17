@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class ItemObjectTemplate : MonoBehaviour
 {
-    [SerializeField] protected Animator txtAnim;
     [SerializeField] protected InventoryItemData referenceItem;
-    [SerializeField] protected Text messageText;
     [SerializeField] protected bool item;
+    [SerializeField] protected TextGralController textGralController;
+    protected string textMessage;
     void Awake()
     {
         AwakeCharge();
+        textGralController = FindObjectOfType<TextGralController>();
     }
     void Update()
     {
@@ -16,11 +17,7 @@ public abstract class ItemObjectTemplate : MonoBehaviour
     }
     void AwakeCharge()
     {
-        txtAnim = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Animator>();
-        messageText = GameObject.FindGameObjectWithTag("txtGral").GetComponent<Text>();
         referenceItem.itemIsCheck = false;
-        messageText.text = "";
-        txtAnim.SetBool("txtinfogral", false);
         item = false;
     }
     protected void DisableCollider()
@@ -31,7 +28,6 @@ public abstract class ItemObjectTemplate : MonoBehaviour
     {
         if (item && Input.GetKeyDown(KeyCode.E))
         {
-            txtAnim.SetBool("txtinfogral", true);
             OnHandlePickUp();
         }
         else
@@ -43,8 +39,8 @@ public abstract class ItemObjectTemplate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            txtAnim.SetBool("txtinfogral", true);
-            messageText.text = "Presiona E para recoger " + "( " + referenceItem.itemName + " )";
+            textMessage = "Presiona E para recoger " + "( " + referenceItem.itemName + " )";
+            textGralController.ShowText(textMessage);
             item = true;
             Debug.Log("In Enter");
         }
@@ -53,8 +49,7 @@ public abstract class ItemObjectTemplate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            txtAnim.SetBool("txtinfogral", false);
-            messageText.text = "";
+            textGralController.HideText();
             item = false;
             Debug.Log("In Exit");
         }

@@ -8,13 +8,15 @@ public class LevelSystem : MonoBehaviour
     [SerializeField] LoadGame loadGame;
     [SerializeField] GameObject[] Levels;
     [SerializeField] PlayerMove playerMove;
-    string myMessage;
+    [SerializeField] TextGralController textGralController;
+    string textMessage;
     void Awake()
     {
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
         targetPlayerPosition = GameObject.FindGameObjectWithTag("targetPlayer").GetComponent<Transform>();
         loadController = FindObjectOfType<LoadController>();
         loadGame = FindObjectOfType<LoadGame>();
+        textGralController = FindObjectOfType<TextGralController>();
     }
     void Start()
     {
@@ -51,44 +53,58 @@ public class LevelSystem : MonoBehaviour
                 Levels[1].SetActive(false);
                 Levels[2].SetActive(false);
                 Levels[3].SetActive(false);
-                Debug.Log("Bienvenido al Nivel 1");
+                Levels[4].SetActive(false);
+                textGralController.StartingWTLT(level);
+                LevelCondition();
                 break;
             case 2:
                 Levels[0].SetActive(false);
                 Levels[1].SetActive(true);
                 Levels[2].SetActive(false);
                 Levels[3].SetActive(false);
-                myMessage = "Bienvenido al Nivel 2";
-                LevelCondition(myMessage);
+                Levels[4].SetActive(false);
+                textGralController.StartingWTLT(level);
+                LevelCondition();
                 break;
             case 3:
                 Levels[0].SetActive(false);
                 Levels[1].SetActive(false);
                 Levels[2].SetActive(true);
                 Levels[3].SetActive(false);
-                myMessage = "Bienvenido al Nivel 3";
-                LevelCondition(myMessage);
+                Levels[4].SetActive(false);
+                textGralController.StartingWTLT(level);
+                LevelCondition();
                 break;
             case 4:
                 Levels[0].SetActive(false);
                 Levels[1].SetActive(false);
                 Levels[2].SetActive(false);
                 Levels[3].SetActive(true);
-                myMessage = "Bienvenido al Nivel 4";
-                LevelCondition(myMessage);
+                Levels[4].SetActive(false);
+                textGralController.StartingWTLT(level);
+                LevelCondition();
+                break;
+            case 5:
+                Levels[0].SetActive(false);
+                Levels[1].SetActive(false);
+                Levels[2].SetActive(false);
+                Levels[3].SetActive(false);
+                Levels[4].SetActive(true);
+                textGralController.StartingWTLT(level);
+                LevelCondition();
                 break;
             default:
-                Debug.LogError("Error al cargar nivel");
+                textMessage = "Error al cargar nivel";
+                textGralController.StartingAT(textMessage);
                 break;
         }
     }
-    private void LevelCondition(string message)
+    void LevelCondition()
     {
         if (loadController.LevelLoad)
         {
             PlayerData playerData = SaveAndLoadManager.LoadDataGame();
             loadGame.SetPlayerPosition(playerData);
-            Debug.Log(message);
         }
     }
 }

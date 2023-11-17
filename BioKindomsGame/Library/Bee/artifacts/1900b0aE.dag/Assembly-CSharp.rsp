@@ -390,6 +390,7 @@
 "Assets/MyAssets/Scripts/Game/Menu/ChangeMainCameraBase.cs"
 "Assets/MyAssets/Scripts/Game/Menu/ChanginLevelCollision.cs"
 "Assets/MyAssets/Scripts/Game/Menu/LevelSystem.cs"
+"Assets/MyAssets/Scripts/Game/Menu/TextGralController.cs"
 "Assets/MyAssets/Scripts/Game/MoveInPlataform.cs"
 "Assets/MyAssets/Scripts/Game/MoveSprite.cs"
 "Assets/MyAssets/Scripts/Game/Plataform2.cs"
