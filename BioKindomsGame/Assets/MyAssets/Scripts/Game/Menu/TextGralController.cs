@@ -24,7 +24,17 @@ public class TextGralController : MonoBehaviour
     IEnumerator AnyText(string anytext)
     {
         ShowText(anytext);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(4f);
+        HideText();
+    }
+    public void StartingAT2(String anytext22)
+    {
+        StartCoroutine(AnyText2(anytext22));
+    }
+    IEnumerator AnyText2(string anytext2)
+    {
+        ShowText(anytext2);
+        yield return new WaitForSeconds(1f);
         HideText();
     }
     public void StartingWTLT(int level2)
@@ -33,8 +43,8 @@ public class TextGralController : MonoBehaviour
     }
     IEnumerator WelcomeToLevelText(int level)
     {
-        ShowText($"Bienvenido al nivel {level}");
-        yield return new WaitForSeconds(0.5f);
+        ShowText("Bienvenido al nivel " + level);
+        yield return new WaitForSeconds(1.5f);
         HideText();
     }
     public void StartingIOT()
@@ -44,7 +54,7 @@ public class TextGralController : MonoBehaviour
     IEnumerator ItemObjectText()
     {
         ShowText("Partida guardada!");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         HideText();
     }
 }

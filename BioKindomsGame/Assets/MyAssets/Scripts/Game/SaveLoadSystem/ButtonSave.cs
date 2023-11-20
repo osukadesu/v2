@@ -22,6 +22,6 @@ public class ButtonSave : MonoBehaviour
     {
         SaveAndLoadManager.SaveDataGame(craftBuilderSystem, playerMove, levelSystem);
         textMessage = "Partida Guardada!";
-        textGralController.StartingAT(textMessage);
+        textGralController.StartingAT2(textMessage);
     }
 }

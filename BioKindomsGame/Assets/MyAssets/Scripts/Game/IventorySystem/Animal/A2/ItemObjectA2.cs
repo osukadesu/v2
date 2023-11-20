@@ -3,7 +3,7 @@ public class ItemObjectA2 : ItemObjectTemplate
     protected internal override void OnHandlePickUp()
     {
         textMessage = referenceItem.itemName + " Guardado!";
-        textGralController.StartingAT(textMessage);
+        textGralController.StartingAT2(textMessage);
         InventorySystemA2.instance2.Add(referenceItem);
         referenceItem.itemIsCheck = true;
         Destroy(this.gameObject);

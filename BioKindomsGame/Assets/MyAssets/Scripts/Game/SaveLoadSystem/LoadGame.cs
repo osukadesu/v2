@@ -7,10 +7,12 @@ public class LoadGame : MonoBehaviour
     [SerializeField] ItemObjectA2 IOA2P1, IOA2P2, IOA2P3, IOA2P4, IOA2P5;
     [SerializeField] ItemObjectA3 IOA3P1, IOA3P2, IOA3P3, IOA3P4, IOA3P5;
     [SerializeField] ItemObjectA4 IOA4P1, IOA4P2, IOA4P3, IOA4P4, IOA4P5;
+    [SerializeField] ItemObjectA5 IOA5P1, IOA5P2, IOA5P3, IOA5P4, IOA5P5;
     [SerializeField] InventoryUI inventoryUI;
     [SerializeField] InventoryUIA2 inventoryUIA2;
     [SerializeField] InventoryUIA3 inventoryUIA3;
     [SerializeField] InventoryUIA4 inventoryUIA4;
+    [SerializeField] InventoryUIA5 inventoryUIA5;
     [SerializeField] float timerLoad;
     void Awake()
     {
@@ -30,6 +32,7 @@ public class LoadGame : MonoBehaviour
             InventorySystemA2.instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventory;
             InventorySystemA3.instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventory;
             InventorySystemA4.instance4.OnInventoryChangedEventCallBack += inventoryUIA4.OnUpdateInventory;
+            InventorySystemA5.instance5.OnInventoryChangedEventCallBack += inventoryUIA5.OnUpdateInventory;
             PlayerData playerData = SaveAndLoadManager.LoadDataGame();
             SetPlayerPosition(playerData);
             MappingAnimals(playerData);
@@ -45,6 +48,7 @@ public class LoadGame : MonoBehaviour
             InventorySystemA2.instance2.OnInventoryChangedEventCallBack += inventoryUIA2.OnUpdateInventory;
             InventorySystemA3.instance3.OnInventoryChangedEventCallBack += inventoryUIA3.OnUpdateInventory;
             InventorySystemA4.instance4.OnInventoryChangedEventCallBack += inventoryUIA4.OnUpdateInventory;
+            InventorySystemA5.instance5.OnInventoryChangedEventCallBack += inventoryUIA5.OnUpdateInventory;
             timerLoad = 0;
         }
     }
@@ -61,6 +65,7 @@ public class LoadGame : MonoBehaviour
         MappinAnimal2(playerData);
         MappinAnimal3(playerData);
         MappinAnimal4(playerData);
+        MappinAnimal5(playerData);
     }
     void MappinAnimal1(PlayerData playerData)
     {
@@ -98,12 +103,22 @@ public class LoadGame : MonoBehaviour
         craftBuilderSystem._InventoryItemDatas[19].itemIsCheck = playerData.animal35;
         craftBuilderSystem.IsCreated[3] = playerData.isCreatedA4;
     }
+    void MappinAnimal5(PlayerData playerData)
+    {
+        craftBuilderSystem._InventoryItemDatas[20].itemIsCheck = playerData.animal41;
+        craftBuilderSystem._InventoryItemDatas[21].itemIsCheck = playerData.animal42;
+        craftBuilderSystem._InventoryItemDatas[22].itemIsCheck = playerData.animal43;
+        craftBuilderSystem._InventoryItemDatas[23].itemIsCheck = playerData.animal44;
+        craftBuilderSystem._InventoryItemDatas[24].itemIsCheck = playerData.animal45;
+        craftBuilderSystem.IsCreated[4] = playerData.isCreatedA5;
+    }
     void CheckingAnimals(PlayerData playerData)
     {
         CheckingDataAnimal1(playerData);
         CheckingDataAnimal2(playerData);
         CheckingDataAnimal3(playerData);
         CheckingDataAnimal4(playerData);
+        CheckingDataAnimal5(playerData);
     }
     void CheckingDataAnimal1(PlayerData playerData)
     {
@@ -211,6 +226,33 @@ public class LoadGame : MonoBehaviour
         if (playerData.isCreatedA4)
         {
             craftBuilderSystem.ButtonBuildAnimal4();
+        }
+    }
+    void CheckingDataAnimal5(PlayerData playerData)
+    {
+        if (playerData.animal51)
+        {
+            IOA5P1.OnHandlePickUpLoad();
+        }
+        if (playerData.animal52)
+        {
+            IOA5P2.OnHandlePickUpLoad();
+        }
+        if (playerData.animal53)
+        {
+            IOA5P3.OnHandlePickUpLoad();
+        }
+        if (playerData.animal54)
+        {
+            IOA5P4.OnHandlePickUpLoad();
+        }
+        if (playerData.animal55)
+        {
+            IOA5P5.OnHandlePickUpLoad();
+        }
+        if (playerData.isCreatedA5)
+        {
+            craftBuilderSystem.ButtonBuildAnimal5();
         }
     }
 }

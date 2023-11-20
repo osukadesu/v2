@@ -233,6 +233,17 @@
       "DebugActionIndex": 8
     },
     {
+      "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level3.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/level3.resS"
+      ],
+      "Outputs": [
+        "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/level3.resS"
+      ],
+      "DebugActionIndex": 9
+    },
+    {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/RuntimeInitializeOnLoads.json",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -241,7 +252,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/RuntimeInitializeOnLoads.json"
       ],
-      "DebugActionIndex": 9
+      "DebugActionIndex": 10
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/ScriptingAssemblies.json",
@@ -252,7 +263,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/ScriptingAssemblies.json"
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 11
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets",
@@ -263,7 +274,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets"
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets.resS",
@@ -274,7 +285,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.assets.resS"
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.resource",
@@ -285,7 +296,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets0.resource"
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets",
@@ -296,7 +307,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets"
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets.resS",
@@ -307,7 +318,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.assets.resS"
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 16
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.resource",
@@ -318,7 +329,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets1.resource"
       ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets",
@@ -329,7 +340,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets"
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 18
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets.resS",
@@ -340,7 +351,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.assets.resS"
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 19
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.resource",
@@ -351,7 +362,7 @@
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets2.resource"
       ],
-      "DebugActionIndex": 19
+      "DebugActionIndex": 20
     },
     {
       "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets",
@@ -361,17 +372,6 @@
       ],
       "Outputs": [
         "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets"
-      ],
-      "DebugActionIndex": 20
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets.resS",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/sharedassets3.assets.resS"
-      ],
-      "Outputs": [
-        "C:/Users/oscar/Desktop/Testing/BioKindomsGame_Data/sharedassets3.assets.resS"
       ],
       "DebugActionIndex": 21
     },

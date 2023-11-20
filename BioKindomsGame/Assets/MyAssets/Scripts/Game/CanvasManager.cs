@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 public class CanvasManager : MonoBehaviour
 {
@@ -23,20 +25,14 @@ public class CanvasManager : MonoBehaviour
         _principalMenuView.Configure(this);
         ClosingAll();
     }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if (Time.timeScale == 1.0F)
-                Time.timeScale = 0F;
-            else
-                Time.timeScale = 1.0F;
-            Time.fixedDeltaTime = 0.02F * Time.timeScale;
-        }
-    }
     public void ButtonGoAnimalV2()
     {
         menuCode = 1;
+        _cardMenu.SetContent();
+    }
+    public void ButtonGoVegetalV2()
+    {
+        menuCode = 2;
         _cardMenu.SetContent();
     }
     public void PrincipalMenuViewMethod()
@@ -125,12 +121,16 @@ public class CanvasManager : MonoBehaviour
     {
         craftinCode = 26;
         _cardCraftingContent.SetCrafting();
-        //_craftAnimal5.ButtonBuild();
-        ButtonGoAnimalV2();
+        _craftBuilderSystem.ButtonBuildAnimal5();
+        StartCoroutine(GoNextKindom(ButtonGoAnimalV2, ButtonGoVegetalV2, ButtonGoAnimalV2));
     }
-    public void ButtonContentClose()
+    IEnumerator GoNextKindom(Action firstAction, Action secondAction, Action thirdAction)
     {
-        // return topCode = 0;
+        firstAction.Invoke();
+        yield return new WaitForSeconds(1f);
+        secondAction.Invoke();
+        yield return new WaitForSeconds(2f);
+        thirdAction.Invoke();
     }
     public void CloseInfo()
     {

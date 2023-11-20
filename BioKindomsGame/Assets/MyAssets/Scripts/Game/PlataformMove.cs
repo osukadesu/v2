@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 public class PlataformMove : MonoBehaviour
 {
     [SerializeField] GameObject[] wayPoints;

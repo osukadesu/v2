@@ -5,7 +5,8 @@ public class PlayerData
     public bool animal11, animal12, animal13, animal14, animal15, isCreatedA1,
     animal21, animal22, animal23, animal24, animal25, isCreatedA2,
     animal31, animal32, animal33, animal34, animal35, isCreatedA3,
-    animal41, animal42, animal43, animal44, animal45, isCreatedA4;
+    animal41, animal42, animal43, animal44, animal45, isCreatedA4,
+    animal51, animal52, animal53, animal54, animal55, isCreatedA5;
     public int currentLevelData;
     public PlayerData(CraftBuilderSystem craftBuilderSystem, PlayerMove playerMove, LevelSystem levelSystem)
     {
@@ -21,6 +22,7 @@ public class PlayerData
         MappinAnimal2(craftBuilderSystem);
         MappinAnimal3(craftBuilderSystem);
         MappinAnimal4(craftBuilderSystem);
+        MappinAnimal5(craftBuilderSystem);
     }
 
     void MappinAnimal1(CraftBuilderSystem craftBuilderSystem)
@@ -58,5 +60,14 @@ public class PlayerData
         animal44 = craftBuilderSystem._InventoryItemDatas[18].itemIsCheck;
         animal45 = craftBuilderSystem._InventoryItemDatas[19].itemIsCheck;
         isCreatedA4 = craftBuilderSystem.IsCreated[3];
+    }
+    void MappinAnimal5(CraftBuilderSystem craftBuilderSystem)
+    {
+        animal51 = craftBuilderSystem._InventoryItemDatas[20].itemIsCheck;
+        animal52 = craftBuilderSystem._InventoryItemDatas[21].itemIsCheck;
+        animal53 = craftBuilderSystem._InventoryItemDatas[22].itemIsCheck;
+        animal54 = craftBuilderSystem._InventoryItemDatas[23].itemIsCheck;
+        animal55 = craftBuilderSystem._InventoryItemDatas[24].itemIsCheck;
+        isCreatedA5 = craftBuilderSystem.IsCreated[4];
     }
 }
